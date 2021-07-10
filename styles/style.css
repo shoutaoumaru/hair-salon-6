@@ -91,15 +91,13 @@
     stroke-dashoffset: 2000px;
   }
   20% {
-    stroke-dashoffset: 000;
+    stroke-dashoffset: 0;
   }
   30% {
+    fill: transparent;
   }
-  70% {
-    fill: #090933;
-  }
-  100% {
-    fill: #090933;
+  50% {
+    fill: #111;
   }
 }
 
@@ -110,15 +108,13 @@
     stroke-dashoffset: 2000px;
   }
   20% {
-    stroke-dashoffset: 000;
+    stroke-dashoffset: 0;
   }
   30% {
+    fill: transparent;
   }
-  70% {
-    fill: #090933;
-  }
-  100% {
-    fill: #090933;
+  50% {
+    fill: #111;
   }
 }
 

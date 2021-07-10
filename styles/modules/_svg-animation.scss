@@ -88,20 +88,14 @@
   }
 
   20% {
-    stroke-dashoffset: 000;
+    stroke-dashoffset: 0;
   }
 
   30% {
-    // fill: transparent;
+    fill: transparent;
   }
 
-  70% {
-    fill: rgb(9, 9, 51);
-    // stroke: transparent;
-  }
-
-  100% {
-    fill: rgb(9, 9, 51);
-    // stroke: transparent;
+  50% {
+    fill: #111;
   }
 }
