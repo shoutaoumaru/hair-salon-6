@@ -1,0 +1,246 @@
+/******************************************************************
+
+Stylesheet: 1200px以上のモニタで適用
+
+******************************************************************/
+
+.c-txt-lr {
+  font-size: 2.8rem;
+}
+
+.c-container {
+  padding: 0 10vw;
+}
+
+//#top 
+.p-top {
+  padding: 0 0 10vw 0;
+
+  & .swiper-container {
+
+    & .view-sp {
+      display: none;
+    }
+
+    & .view-pc {
+      display: block;
+    }
+  }
+
+  & .bg-cover {
+    bottom: 45px;
+  }
+}
+
+//#message
+.p-message {
+  &__img {
+    text-align: right;
+
+    & img {
+      width: 80%;
+    }
+
+    &::after {
+      left: none;
+      width: 80%;
+    }
+  }
+
+  & .img-txt {
+    left: 20vw;
+  }
+
+  & .c-txt-vertical {
+    left: 7.5vw;
+  }
+}
+
+//#about 
+.p-about {
+  padding-top: 5vw;
+  margin-bottom: 28vw;
+
+  &__img {
+    &.left {
+      justify-content: flex-end;
+
+      & .simpleParallax {
+        text-align: right;
+      }
+    }
+
+    &.right {
+      margin-top: 5vw;
+      justify-content: flex-start;
+
+      & .simpleParallax {
+        display: block;
+        text-align: left;
+      }
+    }
+  }
+}
+
+//#style
+.p-style {
+  padding-top: 0;
+
+  &__slider-wrapper {
+    display: flex;
+    margin-right: 5vw;
+  }
+
+  &__slider {
+    width: 50%;
+  }
+
+  & .hero {
+    padding-left: 10vw;
+  }
+}
+
+//#special
+.p-special {
+  & img {
+    width: 50%;
+  }
+
+  &__img {
+    &.left {
+      margin-bottom: 0;
+    }
+
+    & .right {
+      margin-top: 0;
+    }
+  }
+
+  &__txt {
+
+    & .txt01,
+    & .txt02 {
+      padding-top: 0;
+    }
+  }
+}
+
+//#information
+.p-info {
+  padding: 0 0 10vw 0;
+}
+
+//#news
+.p-news {
+  padding: 0 0 6vw 0;
+
+  &__list {
+    & a {
+      padding: 2vw 0 2vw 2vw;
+    }
+  }
+}
+
+//#header
+.header {
+  height: 110px;
+
+  & .logo {
+    margin: 40px 20px 0 80px;
+    width: 170px;
+    height: 60px;
+  }
+}
+
+//.p-footer 
+.p-footer {
+  padding: 8vw 0;
+
+  & .c-logo {
+    & img {
+      width: 20%;
+      height: 20%;
+    }
+  }
+}
+
+//* * * * * * staff-page * * * * * * *
+.c-staff {
+  padding: 5vw 0;
+
+  &__title {
+    & span {
+      padding-top: 2vw;
+    }
+
+    & p {
+      margin-top: 4vw;
+    }
+  }
+}
+
+//* * * * * * recruit-page * * * * * * *
+.c-recruit {
+  padding: 5vw 0 5vw 0;
+}
+
+//* * * * * * news-page * * * * * * *
+.c-news {
+  padding: 7vw 0 0 0;
+
+  &__title {
+    margin-bottom: 5vw !important;
+
+    & .c-txt-lr {
+      font-size: 2rem;
+    }
+  }
+
+  &__list {
+    font-size: 1.5rem;
+
+    & a {
+      padding: 3vw 0 3vw 5vw;
+    }
+  }
+
+  & .page-numbers {
+    margin: 8vw 0;
+  }
+}
+
+//* * * * * * news-sl-page * * * * * * *
+.c-news-sl {
+  margin-top: 0;
+  padding-top: 5vw;
+
+  & .c-container {
+    padding: 0 12vw;
+  }
+
+  &__tit {
+    & p {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__date {
+    font-size: 1.6rem;
+  }
+
+  &__list {
+    padding-top: 6vw;
+  }
+
+  &__contents {
+    padding: 8vw 0 4vw 0;
+
+    & p {
+      font-size: 1.2rem;
+    }
+  }
+
+  & .readmore {
+    font-size: 1.4rem;
+  }
+}

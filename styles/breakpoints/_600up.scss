@@ -1,0 +1,376 @@
+/******************************************************************
+
+Stylesheet: 600px以上のモニタで適用
+
+******************************************************************/
+
+
+.c-txt-md {
+  font-size: 1.6rem;
+}
+
+.c-txt-sm {
+  font-size: 1.1rem;
+}
+
+.c-txt-xs {
+  font-size: .9rem;
+}
+
+.c-txt-vertical {
+  font-size: 1.3rem;
+}
+
+.view-more {
+  &__link {
+    font-size: 1.5rem;
+  }
+}
+
+//header
+.header {
+
+  & .sp-navbtn {
+    display: none;
+  }
+
+  & .logo {
+    margin-top: 4vw;
+    width: 150px;
+  }
+
+  & .mobile-container {
+    margin-top: 10px;
+
+    & .mobile-button {
+      top: 42px;
+      right: 45px;
+    }
+  }
+}
+
+//#top
+.p-top {
+  padding: 10vw 0 30vw 0;
+
+  & .bg-cover {
+    bottom: 120px;
+  }
+}
+
+//#message
+.p-message {
+  & .img-txt {
+    font-size: 1.4rem;
+  }
+}
+
+//#about
+.p-about {
+  padding: 20vw 0 0 0;
+  margin-bottom: 40vw;
+
+  &__img {
+
+    &.left,
+    &.right {
+      height: 290px;
+    }
+
+    & img {
+      width: 50%;
+      height: 83%;
+    }
+  }
+}
+
+//#special
+.p-special {
+  &__img {
+
+    & img {
+      width: 50%;
+      height: 72%;
+    }
+
+    &.left {
+      margin-top: 10vw;
+    }
+  }
+}
+
+//#style
+.p-style {
+  padding: 10vw 0 10vw 0;
+
+  & .swiper-container2,
+  & .swiper-container3 {
+    height: 270px;
+  }
+
+  & .menu-name {
+    font-size: 1.6rem;
+  }
+
+  & .hero {
+    padding-left: 20vw;
+  }
+}
+
+//.p-menu 
+.p-menu {
+  &__block {
+    width: 45%;
+  }
+}
+
+//.p-staff
+.p-staff {
+  padding-bottom: 5vw;
+
+  &__img {
+    width: 50%;
+  }
+
+  &__desc {
+    width: 50%;
+    margin: -25vw 0 0 35vw;
+  }
+
+  & .view-more {
+    margin-top: 0;
+  }
+}
+
+//.p-info 
+.p-info {
+  padding: 20vw 0 0 0;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__img {
+    height: 250px;
+  }
+
+  &__item {
+    width: 45%;
+
+    & span {
+      font-size: 1rem;
+    }
+
+    & p {
+      margin-top: 2vw;
+      font-size: 1rem;
+    }
+
+    & .g-map {
+      margin-top: 2vw;
+    }
+  }
+}
+
+//.p-recruit 
+.p-recruit {
+  margin-top: 10vw;
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  & .view-more {
+    margin-top: 0;
+  }
+}
+
+//.p-news
+.p-news {
+  &__date {
+    font-size: 1.2rem;
+  }
+
+  &__title {
+    font-size: 1.2rem;
+  }
+
+  &__link {
+    padding: 3vw 0;
+  }
+}
+
+//#footer
+.p-footer {
+  padding: 8vw 0;
+
+  .c-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__sns {
+    margin-bottom: 0;
+  }
+
+  & .sns-insta,
+  & .sns-fb {
+    margin-right: 15px;
+    margin-left: 15px;
+
+    & .sns-link {
+      width: 50px;
+      height: 50px;
+      border-radius: 50px;
+
+      & i {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+
+  & .c-logo {
+    margin-top: 15px;
+
+    & img {
+      width: 40%;
+    }
+  }
+
+  & .copyright {
+    margin-top: 0;
+    font-size: 1.2rem;
+  }
+}
+
+//mobile-menu
+.mobile-menu {
+  &__ul {
+    font-size: 1.2rem;
+    padding-left: 76px;
+    padding-top: 250px;
+  }
+
+  &__li {
+    margin-bottom: 60px;
+  }
+
+  &__nav {
+    & address {
+      padding-left: 76px;
+
+      & em {
+        font-size: .9rem;
+      }
+    }
+  }
+}
+
+//* * * * * * recruit-page * * * * * * *
+.c-recruit {
+  &__title {
+    & span {
+      padding-top: 3vw;
+      font-size: 2rem;
+    }
+
+    & p {
+      font-size: .8rem;
+    }
+  }
+
+  &__list {
+    margin-top: 5vw;
+  }
+
+  &__subtitle {
+    font-size: 1rem;
+  }
+
+  &__text {
+    font-size: .8rem;
+  }
+}
+
+//* * * * * * staff-page * * * * * * *
+.c-staff {
+  &__img {
+    height: 240px;
+  }
+
+  &__item {
+    margin-bottom: 20px;
+  }
+
+  &__name {
+    font-size: 1rem;
+  }
+
+  &__desc {
+    font-size: .8rem;
+  }
+}
+
+//* * * * * * news-sl-page * * * * * * *
+.c-news-sl {
+  padding: 10vw 0 0 0;
+
+  & .c-container {
+    padding: 0 10vw;
+  }
+
+  &__date {
+    font-size: 1.4rem;
+  }
+
+  &__tit {
+    & p {
+      font-size: 1.4rem;
+    }
+  }
+
+  &__contents {
+    & p {
+      font-size: 1.1rem;
+      line-height: 2.5;
+    }
+  }
+
+  & .readmore {
+    font-size: 1.2rem;
+  }
+}
+
+//* * * * * * news-page * * * * * * *
+.c-news {
+  padding: 10vw 0 10vw 0;
+
+  &__title {
+    & span {
+      font-size: 1.8rem;
+    }
+  }
+
+  &__link {
+    padding: 3vw;
+  }
+
+  &__list {
+    & p {
+      font-size: 1.2rem;
+    }
+  }
+
+  &__date {
+    font-size: 1.2rem;
+  }
+
+  & .page-numbers {
+    margin: 8vw 0 4vw 0;
+  }
+}

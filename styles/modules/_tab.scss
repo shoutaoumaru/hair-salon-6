@@ -1,0 +1,39 @@
+.tab-group {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 3vw;
+  border-bottom: 1px solid rgb(143, 143, 143);
+}
+
+
+
+.panel {
+  display: none;
+}
+
+.tab.is-active {
+  color: rgb(129, 129, 129);
+  transition: all 0.2s ease-out;
+}
+
+.panel.is-show {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.panel-group {
+  padding: 10vw 10vw;
+}
+
+.panel {
+  &__txt {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  &__item {
+    width: 100%;
+    padding: 3vw 0;
+  }
+}
