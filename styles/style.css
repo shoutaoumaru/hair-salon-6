@@ -44,6 +44,7 @@
           align-items: center;
   -webkit-animation: byeOpening 6s forwards;
           animation: byeOpening 6s forwards;
+  overflow: visible;
 }
 
 .pace-done .svg-animation .svg-inner {
