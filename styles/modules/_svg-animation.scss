@@ -65,17 +65,13 @@
 }
 
 //* ロゴオープニングアニメーション *//
-@for $i from 1 to 50 {
-  #wrap_all path {
-    &:nth-child(#{$i}) {
-      fill: rgb(9, 9, 51);
-      stroke: rgb(102, 102, 102);
-      stroke-width: 2px;
-      animation: svg 3s ease-in both;
-      animation-delay: $i * .1s;
-    }
-  }
+#wrap_all path {
+  fill: rgb(9, 9, 51);
+  stroke: rgb(102, 102, 102);
+  stroke-width: 2px;
+  animation: svg 3s ease-in both;
 }
+
 
 // #wrap_all path {
 //   fill: rgb(235, 13, 13);
