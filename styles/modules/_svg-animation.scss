@@ -63,38 +63,3 @@
     z-index: -1;
   }
 }
-
-//* ロゴオープニングアニメーション *//
-#wrap_all path {
-  fill: rgb(9, 9, 51);
-  stroke: rgb(102, 102, 102);
-  stroke-width: 2px;
-  animation: svg 3s ease-in both;
-}
-
-
-// #wrap_all path {
-//   fill: rgb(235, 13, 13);
-//   stroke: rgb(153, 149, 149);
-//   stroke-width: 2px;
-//   animation: svg 5s ease-in both;
-// }
-
-@keyframes svg {
-  0% {
-    fill: transparent;
-    stroke-dashoffset: 2000px;
-  }
-
-  20% {
-    stroke-dashoffset: 0;
-  }
-
-  30% {
-    fill: transparent;
-  }
-
-  50% {
-    fill: #111;
-  }
-}

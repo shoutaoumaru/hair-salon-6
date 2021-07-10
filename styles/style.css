@@ -76,46 +76,6 @@
   }
 }
 
-#wrap_all path {
-  fill: #090933;
-  stroke: #666666;
-  stroke-width: 2px;
-  -webkit-animation: svg 3s ease-in both;
-          animation: svg 3s ease-in both;
-}
-
-@-webkit-keyframes svg {
-  0% {
-    fill: transparent;
-    stroke-dashoffset: 2000px;
-  }
-  20% {
-    stroke-dashoffset: 0;
-  }
-  30% {
-    fill: transparent;
-  }
-  50% {
-    fill: #111;
-  }
-}
-
-@keyframes svg {
-  0% {
-    fill: transparent;
-    stroke-dashoffset: 2000px;
-  }
-  20% {
-    stroke-dashoffset: 0;
-  }
-  30% {
-    fill: transparent;
-  }
-  50% {
-    fill: #111;
-  }
-}
-
 body {
   font-family: 'Josefin Sans', sans-serif;
   font-family: 'Noto Serif JP', serif;
