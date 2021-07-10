@@ -59,11 +59,11 @@ Stylesheet: 1200px以上のモニタで適用
 //#about 
 .p-about {
   padding-top: 5vw;
-  margin-bottom: 28vw;
 
   &__img {
     &.left {
       justify-content: flex-end;
+      padding-right: 100px;
 
       & .simpleParallax {
         text-align: right;
@@ -72,11 +72,11 @@ Stylesheet: 1200px以上のモニタで適用
 
     &.right {
       margin-top: 5vw;
+      padding-left: 100px;
       justify-content: flex-start;
 
       & .simpleParallax {
         display: block;
-        text-align: left;
       }
     }
   }

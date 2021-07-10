@@ -76,6 +76,10 @@ Stylesheet: 960px以上のモニタで適用
     &.right {
       height: 360px;
     }
+
+    & img {
+      width: 35%;
+    }
   }
 }
 
@@ -146,7 +150,7 @@ Stylesheet: 960px以上のモニタで適用
 
 //#news 
 .p-news {
-  padding: 0;
+  padding: 10vw 0 0 0;
 
   &__tit {
     margin-bottom: 7vw;

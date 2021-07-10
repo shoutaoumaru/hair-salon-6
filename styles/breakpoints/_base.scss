@@ -429,40 +429,48 @@ a {
 
   &__img {
     & img {
-      width: 60%;
-      height: 85%;
+      width: 40%;
+      height: 70%;
+    }
+
+    & .simpleParallax {
+      overflow: visible !important;
     }
 
     &.left {
       display: flex;
       justify-content: flex-start;
-      margin-top: 15vw;
+      margin-top: 30vw;
+      padding-left: 30px;
       height: 160px;
 
       & img {
         box-shadow: 20px 30px 45px rgb(199, 199, 199);
-      }
-
-      & .simpleParallax {
-        overflow: visible !important;
       }
     }
 
     &.right {
       display: flex;
       justify-content: flex-end;
-      margin-top: 5vw;
+      margin-top: 25vw;
+      padding-right: 30px;
+
       height: 160px;
 
       & img {
         box-shadow: 20px 30px 45px rgb(199, 199, 199)
+      }
+
+      & .simpleParallax {
+        display: flex;
+        justify-content: flex-end;
       }
     }
   }
 
   & .cover-bg {
     position: absolute;
-    top: 67%;
+    top: 60%;
     left: 0;
     background-color: rgb(238, 231, 231);
     height: 110vw;
@@ -472,14 +480,14 @@ a {
   }
 
   & .c-txt-vertical {
-    top: 82%;
+    top: 68%;
   }
 }
 
 //#style
 .p-style {
   position: relative;
-  padding: 30vw 0 15vw 0;
+  padding: 12vw 0 15vw 0;
 
   &__container {
     padding-left: 10vw;

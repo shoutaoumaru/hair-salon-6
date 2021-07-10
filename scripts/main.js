@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   };
   const so4 = new ScrollObserver('.clip-js-bg', cb2, {
-    rootMargin: '300px 0px',
+    rootMargin: '100px 0px',
   });
   // <!-------- /text-animation -------->
   const so2 = new ScrollObserver(
