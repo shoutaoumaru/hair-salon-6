@@ -434,8 +434,8 @@ a {
     }
 
     &.left {
-      display: flex;
-      justify-content: flex-start;
+      // display: flex;
+      // justify-content: flex-start;
       margin-top: 0vw;
       height: 160px;
 
@@ -445,17 +445,10 @@ a {
     }
 
     &.right {
-      display: flex;
+      // display: flex;
       justify-content: flex-end;
       margin-top: 14vw;
       height: 160px;
-      -webkit-overflow-scrolling: touch;
-
-
-      & .simpleParallax {
-        display: flex;
-        justify-content: flex-end;
-      }
 
       & img {
         box-shadow: 20px 30px 45px rgb(199, 199, 199)
