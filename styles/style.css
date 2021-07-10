@@ -1,4 +1,615 @@
 @charset "UTF-8";
+.cls-1 {
+  fill: #0d0c0d;
+}
+
+.cls-2 {
+  fill: #0e0d0d;
+}
+
+.cls-3 {
+  fill: none;
+  stroke: #fff;
+  stroke-miterlimit: 10;
+  stroke-width: 9px;
+  opacity: 1;
+}
+
+.svg-animation {
+  padding: 17vw;
+}
+
+.pace-running .superwrapper {
+  opacity: 0;
+  overflow: hidden;
+}
+
+.pace-done .svg-animation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99999;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-animation: byeOpening 6s forwards;
+          animation: byeOpening 6s forwards;
+}
+
+.pace-done .svg-animation .svg-inner {
+  padding: 20px;
+}
+
+.pace-done .svg-animation .svg-inner svg {
+  height: 100%;
+  width: 100%;
+}
+
+@-webkit-keyframes byeOpening {
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+    z-index: -1;
+  }
+}
+
+@keyframes byeOpening {
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+    z-index: -1;
+  }
+}
+
+#wrap_all path:nth-child(1) {
+  fill: #090933;
+  stroke: #666666;
+  stroke-width: 2px;
+  -webkit-animation: svg 3s ease-in both;
+          animation: svg 3s ease-in both;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+#wrap_all path:nth-child(2) {
+  fill: #090933;
+  stroke: #666666;
+  stroke-width: 2px;
+  -webkit-animation: svg 3s ease-in both;
+          animation: svg 3s ease-in both;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+#wrap_all path:nth-child(3) {
+  fill: #090933;
+  stroke: #666666;
+  stroke-width: 2px;
+  -webkit-animation: svg 3s ease-in both;
+          animation: svg 3s ease-in both;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+#wrap_all path:nth-child(4) {
+  fill: #090933;
+  stroke: #666666;
+  stroke-width: 2px;
+  -webkit-animation: svg 3s ease-in both;
+          animation: svg 3s ease-in both;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+#wrap_all path:nth-child(5) {
+  fill: #090933;
+  stroke: #666666;
+  stroke-width: 2px;
+  -webkit-animation: svg 3s ease-in both;
+          animation: svg 3s ease-in both;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+#wrap_all path:nth-child(6) {
+  fill: #090933;
+  stroke: #666666;
+  stroke-width: 2px;
+  -webkit-animation: svg 3s ease-in both;
+          animation: svg 3s ease-in both;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+#wrap_all path:nth-child(7) {
+  fill: #090933;
+  stroke: #666666;
+  stroke-width: 2px;
+  -webkit-animation: svg 3s ease-in both;
+          animation: svg 3s ease-in both;
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+}
+
+#wrap_all path:nth-child(8) {
+  fill: #090933;
+  stroke: #666666;
+  stroke-width: 2px;
+  -webkit-animation: svg 3s ease-in both;
+          animation: svg 3s ease-in both;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+#wrap_all path:nth-child(9) {
+  fill: #090933;
+  stroke: #666666;
+  stroke-width: 2px;
+  -webkit-animation: svg 3s ease-in both;
+          animation: svg 3s ease-in both;
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+
+#wrap_all path:nth-child(10) {
+  fill: #090933;
+  stroke: #666666;
+  stroke-width: 2px;
+  -webkit-animation: svg 3s ease-in both;
+          animation: svg 3s ease-in both;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+#wrap_all path:nth-child(11) {
+  fill: #090933;
+  stroke: #666666;
+  stroke-width: 2px;
+  -webkit-animation: svg 3s ease-in both;
+          animation: svg 3s ease-in both;
+  -webkit-animation-delay: 1.1s;
+          animation-delay: 1.1s;
+}
+
+#wrap_all path:nth-child(12) {
+  fill: #090933;
+  stroke: #666666;
+  stroke-width: 2px;
+  -webkit-animation: svg 3s ease-in both;
+          animation: svg 3s ease-in both;
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+
+#wrap_all path:nth-child(13) {
+  fill: #090933;
+  stroke: #666666;
+  stroke-width: 2px;
+  -webkit-animation: svg 3s ease-in both;
+          animation: svg 3s ease-in both;
+  -webkit-animation-delay: 1.3s;
+          animation-delay: 1.3s;
+}
+
+#wrap_all path:nth-child(14) {
+  fill: #090933;
+  stroke: #666666;
+  stroke-width: 2px;
+  -webkit-animation: svg 3s ease-in both;
+          animation: svg 3s ease-in both;
+  -webkit-animation-delay: 1.4s;
+          animation-delay: 1.4s;
+}
+
+#wrap_all path:nth-child(15) {
+  fill: #090933;
+  stroke: #666666;
+  stroke-width: 2px;
+  -webkit-animation: svg 3s ease-in both;
+          animation: svg 3s ease-in both;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+#wrap_all path:nth-child(16) {
+  fill: #090933;
+  stroke: #666666;
+  stroke-width: 2px;
+  -webkit-animation: svg 3s ease-in both;
+          animation: svg 3s ease-in both;
+  -webkit-animation-delay: 1.6s;
+          animation-delay: 1.6s;
+}
+
+#wrap_all path:nth-child(17) {
+  fill: #090933;
+  stroke: #666666;
+  stroke-width: 2px;
+  -webkit-animation: svg 3s ease-in both;
+          animation: svg 3s ease-in both;
+  -webkit-animation-delay: 1.7s;
+          animation-delay: 1.7s;
+}
+
+#wrap_all path:nth-child(18) {
+  fill: #090933;
+  stroke: #666666;
+  stroke-width: 2px;
+  -webkit-animation: svg 3s ease-in both;
+          animation: svg 3s ease-in both;
+  -webkit-animation-delay: 1.8s;
+          animation-delay: 1.8s;
+}
+
+#wrap_all path:nth-child(19) {
+  fill: #090933;
+  stroke: #666666;
+  stroke-width: 2px;
+  -webkit-animation: svg 3s ease-in both;
+          animation: svg 3s ease-in both;
+  -webkit-animation-delay: 1.9s;
+          animation-delay: 1.9s;
+}
+
+#wrap_all path:nth-child(20) {
+  fill: #090933;
+  stroke: #666666;
+  stroke-width: 2px;
+  -webkit-animation: svg 3s ease-in both;
+          animation: svg 3s ease-in both;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+#wrap_all path:nth-child(21) {
+  fill: #090933;
+  stroke: #666666;
+  stroke-width: 2px;
+  -webkit-animation: svg 3s ease-in both;
+          animation: svg 3s ease-in both;
+  -webkit-animation-delay: 2.1s;
+          animation-delay: 2.1s;
+}
+
+#wrap_all path:nth-child(22) {
+  fill: #090933;
+  stroke: #666666;
+  stroke-width: 2px;
+  -webkit-animation: svg 3s ease-in both;
+          animation: svg 3s ease-in both;
+  -webkit-animation-delay: 2.2s;
+          animation-delay: 2.2s;
+}
+
+#wrap_all path:nth-child(23) {
+  fill: #090933;
+  stroke: #666666;
+  stroke-width: 2px;
+  -webkit-animation: svg 3s ease-in both;
+          animation: svg 3s ease-in both;
+  -webkit-animation-delay: 2.3s;
+          animation-delay: 2.3s;
+}
+
+#wrap_all path:nth-child(24) {
+  fill: #090933;
+  stroke: #666666;
+  stroke-width: 2px;
+  -webkit-animation: svg 3s ease-in both;
+          animation: svg 3s ease-in both;
+  -webkit-animation-delay: 2.4s;
+          animation-delay: 2.4s;
+}
+
+#wrap_all path:nth-child(25) {
+  fill: #090933;
+  stroke: #666666;
+  stroke-width: 2px;
+  -webkit-animation: svg 3s ease-in both;
+          animation: svg 3s ease-in both;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+}
+
+#wrap_all path:nth-child(26) {
+  fill: #090933;
+  stroke: #666666;
+  stroke-width: 2px;
+  -webkit-animation: svg 3s ease-in both;
+          animation: svg 3s ease-in both;
+  -webkit-animation-delay: 2.6s;
+          animation-delay: 2.6s;
+}
+
+#wrap_all path:nth-child(27) {
+  fill: #090933;
+  stroke: #666666;
+  stroke-width: 2px;
+  -webkit-animation: svg 3s ease-in both;
+          animation: svg 3s ease-in both;
+  -webkit-animation-delay: 2.7s;
+          animation-delay: 2.7s;
+}
+
+#wrap_all path:nth-child(28) {
+  fill: #090933;
+  stroke: #666666;
+  stroke-width: 2px;
+  -webkit-animation: svg 3s ease-in both;
+          animation: svg 3s ease-in both;
+  -webkit-animation-delay: 2.8s;
+          animation-delay: 2.8s;
+}
+
+#wrap_all path:nth-child(29) {
+  fill: #090933;
+  stroke: #666666;
+  stroke-width: 2px;
+  -webkit-animation: svg 3s ease-in both;
+          animation: svg 3s ease-in both;
+  -webkit-animation-delay: 2.9s;
+          animation-delay: 2.9s;
+}
+
+#wrap_all path:nth-child(30) {
+  fill: #090933;
+  stroke: #666666;
+  stroke-width: 2px;
+  -webkit-animation: svg 3s ease-in both;
+          animation: svg 3s ease-in both;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+#wrap_all path:nth-child(31) {
+  fill: #090933;
+  stroke: #666666;
+  stroke-width: 2px;
+  -webkit-animation: svg 3s ease-in both;
+          animation: svg 3s ease-in both;
+  -webkit-animation-delay: 3.1s;
+          animation-delay: 3.1s;
+}
+
+#wrap_all path:nth-child(32) {
+  fill: #090933;
+  stroke: #666666;
+  stroke-width: 2px;
+  -webkit-animation: svg 3s ease-in both;
+          animation: svg 3s ease-in both;
+  -webkit-animation-delay: 3.2s;
+          animation-delay: 3.2s;
+}
+
+#wrap_all path:nth-child(33) {
+  fill: #090933;
+  stroke: #666666;
+  stroke-width: 2px;
+  -webkit-animation: svg 3s ease-in both;
+          animation: svg 3s ease-in both;
+  -webkit-animation-delay: 3.3s;
+          animation-delay: 3.3s;
+}
+
+#wrap_all path:nth-child(34) {
+  fill: #090933;
+  stroke: #666666;
+  stroke-width: 2px;
+  -webkit-animation: svg 3s ease-in both;
+          animation: svg 3s ease-in both;
+  -webkit-animation-delay: 3.4s;
+          animation-delay: 3.4s;
+}
+
+#wrap_all path:nth-child(35) {
+  fill: #090933;
+  stroke: #666666;
+  stroke-width: 2px;
+  -webkit-animation: svg 3s ease-in both;
+          animation: svg 3s ease-in both;
+  -webkit-animation-delay: 3.5s;
+          animation-delay: 3.5s;
+}
+
+#wrap_all path:nth-child(36) {
+  fill: #090933;
+  stroke: #666666;
+  stroke-width: 2px;
+  -webkit-animation: svg 3s ease-in both;
+          animation: svg 3s ease-in both;
+  -webkit-animation-delay: 3.6s;
+          animation-delay: 3.6s;
+}
+
+#wrap_all path:nth-child(37) {
+  fill: #090933;
+  stroke: #666666;
+  stroke-width: 2px;
+  -webkit-animation: svg 3s ease-in both;
+          animation: svg 3s ease-in both;
+  -webkit-animation-delay: 3.7s;
+          animation-delay: 3.7s;
+}
+
+#wrap_all path:nth-child(38) {
+  fill: #090933;
+  stroke: #666666;
+  stroke-width: 2px;
+  -webkit-animation: svg 3s ease-in both;
+          animation: svg 3s ease-in both;
+  -webkit-animation-delay: 3.8s;
+          animation-delay: 3.8s;
+}
+
+#wrap_all path:nth-child(39) {
+  fill: #090933;
+  stroke: #666666;
+  stroke-width: 2px;
+  -webkit-animation: svg 3s ease-in both;
+          animation: svg 3s ease-in both;
+  -webkit-animation-delay: 3.9s;
+          animation-delay: 3.9s;
+}
+
+#wrap_all path:nth-child(40) {
+  fill: #090933;
+  stroke: #666666;
+  stroke-width: 2px;
+  -webkit-animation: svg 3s ease-in both;
+          animation: svg 3s ease-in both;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
+#wrap_all path:nth-child(41) {
+  fill: #090933;
+  stroke: #666666;
+  stroke-width: 2px;
+  -webkit-animation: svg 3s ease-in both;
+          animation: svg 3s ease-in both;
+  -webkit-animation-delay: 4.1s;
+          animation-delay: 4.1s;
+}
+
+#wrap_all path:nth-child(42) {
+  fill: #090933;
+  stroke: #666666;
+  stroke-width: 2px;
+  -webkit-animation: svg 3s ease-in both;
+          animation: svg 3s ease-in both;
+  -webkit-animation-delay: 4.2s;
+          animation-delay: 4.2s;
+}
+
+#wrap_all path:nth-child(43) {
+  fill: #090933;
+  stroke: #666666;
+  stroke-width: 2px;
+  -webkit-animation: svg 3s ease-in both;
+          animation: svg 3s ease-in both;
+  -webkit-animation-delay: 4.3s;
+          animation-delay: 4.3s;
+}
+
+#wrap_all path:nth-child(44) {
+  fill: #090933;
+  stroke: #666666;
+  stroke-width: 2px;
+  -webkit-animation: svg 3s ease-in both;
+          animation: svg 3s ease-in both;
+  -webkit-animation-delay: 4.4s;
+          animation-delay: 4.4s;
+}
+
+#wrap_all path:nth-child(45) {
+  fill: #090933;
+  stroke: #666666;
+  stroke-width: 2px;
+  -webkit-animation: svg 3s ease-in both;
+          animation: svg 3s ease-in both;
+  -webkit-animation-delay: 4.5s;
+          animation-delay: 4.5s;
+}
+
+#wrap_all path:nth-child(46) {
+  fill: #090933;
+  stroke: #666666;
+  stroke-width: 2px;
+  -webkit-animation: svg 3s ease-in both;
+          animation: svg 3s ease-in both;
+  -webkit-animation-delay: 4.6s;
+          animation-delay: 4.6s;
+}
+
+#wrap_all path:nth-child(47) {
+  fill: #090933;
+  stroke: #666666;
+  stroke-width: 2px;
+  -webkit-animation: svg 3s ease-in both;
+          animation: svg 3s ease-in both;
+  -webkit-animation-delay: 4.7s;
+          animation-delay: 4.7s;
+}
+
+#wrap_all path:nth-child(48) {
+  fill: #090933;
+  stroke: #666666;
+  stroke-width: 2px;
+  -webkit-animation: svg 3s ease-in both;
+          animation: svg 3s ease-in both;
+  -webkit-animation-delay: 4.8s;
+          animation-delay: 4.8s;
+}
+
+#wrap_all path:nth-child(49) {
+  fill: #090933;
+  stroke: #666666;
+  stroke-width: 2px;
+  -webkit-animation: svg 3s ease-in both;
+          animation: svg 3s ease-in both;
+  -webkit-animation-delay: 4.9s;
+          animation-delay: 4.9s;
+}
+
+@-webkit-keyframes svg {
+  0% {
+    fill: transparent;
+    stroke-dasharray: 2000px;
+    stroke-dashoffset: 2000px;
+  }
+  20% {
+    stroke-dashoffset: 000;
+  }
+  30% {
+    fill: transparent;
+  }
+  70% {
+    fill: #090933;
+    stroke: transparent;
+  }
+  100% {
+    fill: #090933;
+    stroke: transparent;
+  }
+}
+
+@keyframes svg {
+  0% {
+    fill: transparent;
+    stroke-dasharray: 2000px;
+    stroke-dashoffset: 2000px;
+  }
+  20% {
+    stroke-dashoffset: 000;
+  }
+  30% {
+    fill: transparent;
+  }
+  70% {
+    fill: #090933;
+    stroke: transparent;
+  }
+  100% {
+    fill: #090933;
+    stroke: transparent;
+  }
+}
+
 body {
   font-family: 'Josefin Sans', sans-serif;
   font-family: 'Noto Serif JP', serif;
