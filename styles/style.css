@@ -1033,6 +1033,7 @@ a {
           justify-content: flex-end;
   margin-top: 14vw;
   height: 160px;
+  -webkit-overflow-scrolling: touch;
 }
 
 .p-about__img.right .simpleParallax {
