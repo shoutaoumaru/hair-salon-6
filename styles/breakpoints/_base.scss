@@ -436,18 +436,22 @@ a {
     &.left {
       display: flex;
       justify-content: flex-start;
-      margin-top: 0vw;
+      margin-top: 15vw;
       height: 160px;
 
       & img {
-        box-shadow: 20px 30px 45px rgb(199, 199, 199)
+        box-shadow: 20px 30px 45px rgb(199, 199, 199);
+      }
+
+      & .simpleParallax {
+        overflow: visible !important;
       }
     }
 
     &.right {
       display: flex;
       justify-content: flex-end;
-      margin-top: 14vw;
+      margin-top: 5vw;
       height: 160px;
 
       & img {
@@ -458,7 +462,7 @@ a {
 
   & .cover-bg {
     position: absolute;
-    top: 72%;
+    top: 67%;
     left: 0;
     background-color: rgb(238, 231, 231);
     height: 110vw;

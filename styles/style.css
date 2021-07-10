@@ -1015,13 +1015,17 @@ a {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  margin-top: 0vw;
+  margin-top: 15vw;
   height: 160px;
 }
 
 .p-about__img.left img {
   -webkit-box-shadow: 20px 30px 45px #c7c7c7;
           box-shadow: 20px 30px 45px #c7c7c7;
+}
+
+.p-about__img.left .simpleParallax {
+  overflow: visible !important;
 }
 
 .p-about__img.right {
@@ -1031,7 +1035,7 @@ a {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  margin-top: 14vw;
+  margin-top: 5vw;
   height: 160px;
 }
 
@@ -1042,7 +1046,7 @@ a {
 
 .p-about .cover-bg {
   position: absolute;
-  top: 72%;
+  top: 67%;
   left: 0;
   background-color: #eee7e7;
   height: 110vw;

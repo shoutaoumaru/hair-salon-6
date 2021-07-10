@@ -18,7 +18,7 @@ new simpleParallax(parallax02, {
 //* * *  * * *  パララックスbg* *  * * * * * * /
 
 let rellax = new Rellax('.rellax', {
-  speed: -0.5,
+  speed: -0.3,
   center: false,
   wrapper: null,
   round: true,
