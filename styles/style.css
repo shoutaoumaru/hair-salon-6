@@ -87,7 +87,6 @@
 @-webkit-keyframes svg {
   0% {
     fill: transparent;
-    stroke-dasharray: 2000px;
     stroke-dashoffset: 2000px;
   }
   20% {
@@ -104,7 +103,6 @@
 @keyframes svg {
   0% {
     fill: transparent;
-    stroke-dasharray: 2000px;
     stroke-dashoffset: 2000px;
   }
   20% {
