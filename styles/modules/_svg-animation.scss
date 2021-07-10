@@ -39,7 +39,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    // animation: byeOpening 6s forwards;
+    animation: byeOpening 6s forwards;
 
     & .svg-inner {
       padding: 20px;
@@ -96,16 +96,16 @@
   }
 
   30% {
-    fill: transparent;
+    // fill: transparent;
   }
 
   70% {
     fill: rgb(9, 9, 51);
-    stroke: transparent;
+    // stroke: transparent;
   }
 
   100% {
     fill: rgb(9, 9, 51);
-    stroke: transparent;
+    // stroke: transparent;
   }
 }
