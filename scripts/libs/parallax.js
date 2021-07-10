@@ -17,11 +17,11 @@ new simpleParallax(parallax02, {
 
 //* * *  * * *  パララックスbg* *  * * * * * * /
 
-// let rellax = new Rellax('.rellax', {
-//   speed: -0.5,
-//   center: false,
-//   wrapper: null,
-//   round: true,
-//   vertical: true,
-//   horizontal: false
-// });
+let rellax = new Rellax('.rellax', {
+  speed: -0.5,
+  center: false,
+  wrapper: null,
+  round: true,
+  vertical: true,
+  horizontal: false
+});
