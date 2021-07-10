@@ -16,8 +16,7 @@
 
 //* テキストオープニングアニメーション *//
 .svg-animation {
-  position: relative;
-  z-index: -100;
+  display: none;
   padding: 17vw;
 }
 
