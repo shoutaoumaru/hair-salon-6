@@ -1,10 +1,12 @@
 document.addEventListener('DOMContentLoaded', function () {
-  const hero = new HeroSlider('.swiper-container');
-  hero.start();
-  const hero2 = new HeroSlider2('.swiper-container2');
-  hero2.start();
-  const hero3 = new HeroSlider2('.swiper-container3');
-  hero3.start();
+  setTimeout(() => {
+    const hero = new HeroSlider('.swiper-container');
+    hero.start();
+    const hero2 = new HeroSlider2('.swiper-container2');
+    hero2.start();
+    const hero3 = new HeroSlider2('.swiper-container3');
+    hero3.start();
+  }, 3000);
 
   // <!-------- /HeroSlider-animation -------->
   const cb = function (el, inview) {
