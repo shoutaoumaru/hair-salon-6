@@ -193,7 +193,7 @@ a {
 }
 
 .view-more a span {
-  border-bottom: 1px solid #dfdfdf;
+  border-bottom: 1px solid #a0a0a0;
 }
 
 .more-link {
@@ -264,6 +264,47 @@ a {
   background-size: contain;
   height: 20px;
   width: 20px;
+}
+
+.insta-link {
+  margin-top: 40px;
+  margin-right: 25px;
+  text-align: right;
+}
+
+.insta-link span {
+  position: relative;
+  display: inline-block;
+  padding-left: 25px;
+  padding-right: 15px;
+  border-bottom: 1px solid #474747;
+  font-size: 16px;
+}
+
+.insta-link span::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-image: url(/images/common/icon-insta-gr.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.insta-link span::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 9px;
+  right: 0;
+  height: 8px;
+  width: 8px;
+  background-image: url(/images/common/arrow.png);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .header {
@@ -523,7 +564,7 @@ a {
 
 .p-style {
   position: relative;
-  padding: 12vw 0 15vw 0;
+  padding: 12vw 0 30vw 0;
 }
 
 .p-style__container {
@@ -2083,6 +2124,26 @@ Stylesheet: 600px以上のモニタで適用
   .view-more__link {
     font-size: 1.5rem;
   }
+  .insta-link {
+    margin-top: 40px;
+    margin-right: 75px;
+  }
+  .insta-link span {
+    padding-left: 35px;
+    padding-right: 20px;
+    font-size: 24px;
+  }
+  .insta-link span::before {
+    top: 5px;
+    left: 0;
+    height: 24px;
+    width: 24px;
+  }
+  .insta-link span::after {
+    top: 15px;
+    height: 12px;
+    width: 12px;
+  }
   .header .sp-navbtn {
     display: none;
   }
@@ -2355,6 +2416,26 @@ Stylesheet: 960px以上のモニタで適用
   .c-txt-xs {
     font-size: 1.2rem;
   }
+  .insta-link {
+    margin-top: 40px;
+    margin-right: 75px;
+  }
+  .insta-link span {
+    padding-left: 40px;
+    padding-right: 25px;
+    font-size: 28px;
+  }
+  .insta-link span::before {
+    top: 8px;
+    left: 0;
+    height: 26px;
+    width: 26px;
+  }
+  .insta-link span::after {
+    top: 17px;
+    height: 14px;
+    width: 14px;
+  }
   .header {
     text-transform: uppercase;
   }
@@ -2617,6 +2698,27 @@ Stylesheet: 1200px以上のモニタで適用
   }
   .c-container {
     padding: 0 10vw;
+  }
+  .insta-link {
+    margin-top: -53px;
+    margin-left: 140px;
+    text-align: left;
+  }
+  .insta-link span {
+    padding-left: 42px;
+    padding-right: 24px;
+    font-size: 30px;
+  }
+  .insta-link span::before {
+    top: 12px;
+    left: 0;
+    height: 26px;
+    width: 26px;
+  }
+  .insta-link span::after {
+    top: 20px;
+    height: 14px;
+    width: 14px;
   }
   .p-top {
     padding: 0 0 10vw 0;

@@ -12,6 +12,31 @@ Stylesheet: 1200px以上のモニタで適用
   padding: 0 10vw;
 }
 
+.insta-link {
+  margin-top: -53px;
+  margin-left: 140px;
+  text-align: left;
+
+  & span {
+    padding-left: 42px;
+    padding-right: 24px;
+    font-size: 30px;
+
+    &::before {
+      top: 12px;
+      left: 0;
+      height: 26px;
+      width: 26px;
+    }
+
+    &::after {
+      top: 20px;
+      height: 14px;
+      width: 14px;
+    }
+  }
+}
+
 //#top 
 .p-top {
   padding: 0 0 10vw 0;

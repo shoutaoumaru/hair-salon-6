@@ -23,6 +23,30 @@ Stylesheet: 960px以上のモニタで適用
   font-size: 1.2rem;
 }
 
+.insta-link {
+  margin-top: 40px;
+  margin-right: 75px;
+
+  & span {
+    padding-left: 40px;
+    padding-right: 25px;
+    font-size: 28px;
+
+    &::before {
+      top: 8px;
+      left: 0;
+      height: 26px;
+      width: 26px;
+    }
+
+    &::after {
+      top: 17px;
+      height: 14px;
+      width: 14px;
+    }
+  }
+}
+
 //#header
 .header {
   text-transform: uppercase;
