@@ -140,40 +140,40 @@ a {
 
 .icon-tel {
   position: relative;
-  padding-right: 20px;
+  padding-right: 18px;
 
   &::after {
     content: '';
     display: inline-block;
     position: absolute;
-    top: 3px;
+    top: 4px;
     right: 0;
     background-image: url(/images/common/tel-white.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    height: 14px;
-    width: 14px;
+    height: 13px;
+    width: 13px;
   }
 
 }
 
 .icon-net {
   position: relative;
-  padding-right: 20px;
+  padding-right: 18px;
 
   &::after {
     content: '';
     display: inline-block;
     position: absolute;
-    top: 3px;
+    top: 4px;
     right: 0;
     background-image: url(/images/common/icon-link-1-white.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    height: 14px;
-    width: 14px;
+    height: 13px;
+    width: 13px;
   }
 
 }
@@ -329,6 +329,10 @@ a {
         font-size: 14px;
         letter-spacing: 1px;
         display: block;
+      }
+
+      & .tel {
+        letter-spacing: 2px;
       }
 
       & a:hover,
