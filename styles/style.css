@@ -321,7 +321,7 @@ a {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  margin: 5vw 0 0 5vw;
+  margin: 4.2vw 0 0 5vw;
   height: 44px;
   width: 115px;
 }
@@ -801,9 +801,11 @@ a {
   position: relative;
   color: #161616;
   padding-left: 25px;
-  display: block;
+  padding-bottom: 5px;
+  display: inline-block;
   margin-top: 5vw;
   font-size: .8rem;
+  border-bottom: 1px solid #474747;
 }
 
 .p-info__item .g-map::before {
