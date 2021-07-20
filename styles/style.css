@@ -202,47 +202,40 @@ a {
 
 .icon-tel {
   position: relative;
+  padding-right: 20px;
 }
 
-.icon-tel::before {
+.icon-tel::after {
   content: '';
-  display: block;
-  background-image: url(/images/common/icon-tel.png);
+  display: inline-block;
+  position: absolute;
+  top: 3px;
+  right: 0;
+  background-image: url(/images/common/tel-white.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  height: 17px;
-  width: 17px;
-}
-
-.icon-map {
-  position: relative;
-}
-
-.icon-map::before {
-  content: '';
-  display: block;
-  background-image: url(/images/common/icon-map.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 17px;
-  width: 17px;
+  height: 14px;
+  width: 14px;
 }
 
 .icon-net {
   position: relative;
+  padding-right: 20px;
 }
 
-.icon-net::before {
+.icon-net::after {
   content: '';
-  display: block;
-  background-image: url(/images/common/icon-calendar.png);
+  display: inline-block;
+  position: absolute;
+  top: 3px;
+  right: 0;
+  background-image: url(/images/common/icon-link-1-white.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  height: 17px;
-  width: 17px;
+  height: 14px;
+  width: 14px;
 }
 
 .icon-insta {
@@ -345,9 +338,9 @@ a {
   position: fixed;
   bottom: 0;
   left: 0;
-  background-color: #fff;
+  background-color: rgba(31, 31, 31, 0.9);
   opacity: .7;
-  height: 6vh;
+  height: 6.5vh;
   width: 100%;
   z-index: 2000;
   -webkit-transition: all 0.3s;
@@ -358,8 +351,6 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -371,20 +362,28 @@ a {
   bottom: 0;
   left: 0;
   right: 0;
-  width: 60vw;
+  width: 77vw;
   margin: auto;
 }
 
 .header .sp-navbtn__container a {
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 1px;
   display: block;
+}
+
+.header .sp-navbtn__container a:hover,
+.header .sp-navbtn__container a:active {
+  text-decoration: underline;
 }
 
 .header .hide.sp-navbtn {
   visibility: hidden;
   -webkit-transform: translateY(50px);
           transform: translateY(50px);
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
 }
 
 @media (min-width: 960px) {
@@ -422,7 +421,7 @@ a {
 }
 
 .p-top .swiper-container {
-  height: 65vh;
+  height: 75vh;
   width: 80%;
 }
 
