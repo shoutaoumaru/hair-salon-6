@@ -139,43 +139,29 @@ a {
 }
 
 .icon-tel {
-  position: relative;
-  padding-right: 18px;
-
-  &::after {
-    content: '';
-    display: inline-block;
-    position: absolute;
-    top: 4px;
-    right: 0;
-    background-image: url(/images/common/tel-white.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 13px;
-    width: 13px;
-  }
-
+  display: inline-block;
+  position: absolute;
+  top: 4px;
+  right: 0;
+  background-image: url(/images/common/tel-white.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 12px;
+  width: 12px;
 }
 
 .icon-net {
-  position: relative;
-  padding-right: 18px;
-
-  &::after {
-    content: '';
-    display: inline-block;
-    position: absolute;
-    top: 4px;
-    right: 0;
-    background-image: url(/images/common/icon-link-1-white.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 13px;
-    width: 13px;
-  }
-
+  display: inline-block;
+  position: absolute;
+  top: 4px;
+  right: 0;
+  background-image: url(/images/common/icon-link-1-white.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 13px;
+  width: 13px;
 }
 
 .icon-insta {
@@ -325,10 +311,12 @@ a {
       margin: auto;
 
       & a {
+        position: relative;
         color: $cWhite;
         font-size: 14px;
         letter-spacing: 1px;
         display: block;
+        padding-right: 18px;
       }
 
       & .tel {

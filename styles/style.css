@@ -201,12 +201,6 @@ a {
 }
 
 .icon-tel {
-  position: relative;
-  padding-right: 18px;
-}
-
-.icon-tel::after {
-  content: '';
   display: inline-block;
   position: absolute;
   top: 4px;
@@ -215,17 +209,11 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  height: 13px;
-  width: 13px;
+  height: 12px;
+  width: 12px;
 }
 
 .icon-net {
-  position: relative;
-  padding-right: 18px;
-}
-
-.icon-net::after {
-  content: '';
   display: inline-block;
   position: absolute;
   top: 4px;
@@ -367,10 +355,12 @@ a {
 }
 
 .header .sp-navbtn__container a {
+  position: relative;
   color: #fff;
   font-size: 14px;
   letter-spacing: 1px;
   display: block;
+  padding-right: 18px;
 }
 
 .header .sp-navbtn__container .tel {
