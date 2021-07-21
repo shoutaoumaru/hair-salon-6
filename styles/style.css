@@ -1731,18 +1731,16 @@ a {
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 100;
+  z-index: 4000;
   overflow: hidden;
   height: 66px;
   width: 100%;
-  z-index: 2000;
 }
 
 .mobile-container .mobile-button {
   position: fixed;
   top: 20px;
   right: 10px;
-  z-index: 2000;
 }
 
 .mobile-container .mobile-menu__btn {
@@ -1756,17 +1754,13 @@ a {
 .mobile-container .mobile-menu__btn > span {
   background-color: #474747;
   width: 25px;
-  height: 2px;
+  height: 1px;
   display: block;
   margin-bottom: 7px;
   -webkit-transition: -webkit-transform 0.7s;
   transition: -webkit-transform 0.7s;
   transition: transform 0.7s;
   transition: transform 0.7s, -webkit-transform 0.7s;
-}
-
-.mobile-container .mobile-menu__btn > span:nth-child(2) {
-  width: 15px;
 }
 
 .mobile-container .mobile-menu__btn > span:last-child {
@@ -1777,8 +1771,24 @@ a {
   background-color: #474747;
 }
 
+@media (min-width: 600px) {
+  .mobile-container .mobile-menu__btn > span {
+    width: 35px;
+    height: 1px;
+    display: block;
+    margin-bottom: 9px;
+    -webkit-transition: -webkit-transform 0.7s;
+    transition: -webkit-transform 0.7s;
+    transition: transform 0.7s;
+    transition: transform 0.7s, -webkit-transform 0.7s;
+  }
+  .mobile-container .mobile-menu__btn > span:last-child {
+    margin-bottom: 0;
+  }
+}
+
 .menu-open.mobile-menu {
-  z-index: 1000;
+  z-index: 3000;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
   -webkit-transform: none;
@@ -1862,8 +1872,19 @@ a {
 .menu-open .mobile-menu__btn > span:nth-child(3) {
   -webkit-transition-delay: 140ms;
           transition-delay: 140ms;
-  -webkit-transform: translateY(-8px) rotate(-135deg);
-          transform: translateY(-8px) rotate(-135deg);
+  -webkit-transform: translateY(-6px) rotate(-135deg);
+          transform: translateY(-6px) rotate(-135deg);
+}
+
+@media (min-width: 600px) {
+  .menu-open .mobile-menu__btn > span:nth-child(1) {
+    -webkit-transform: translateY(10px) rotate(135deg);
+            transform: translateY(10px) rotate(135deg);
+  }
+  .menu-open .mobile-menu__btn > span:nth-child(3) {
+    -webkit-transform: translateY(-10px) rotate(-135deg);
+            transform: translateY(-10px) rotate(-135deg);
+  }
 }
 
 .appear.up .item {

@@ -82,17 +82,15 @@
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 100;
+  z-index: 4000;
   overflow: hidden;
   height: 66px;
   width: 100%;
-  z-index: 2000;
 
   .mobile-button {
     position: fixed;
     top: 20px;
     right: 10px;
-    z-index: 2000;
   }
 
   .mobile-menu__btn {
@@ -106,14 +104,10 @@
     &>span {
       background-color: $cSubBlack;
       width: 25px;
-      height: 2px;
+      height: 1px;
       display: block;
       margin-bottom: 7px;
       transition: transform 0.7s;
-
-      &:nth-child(2) {
-        width: 15px;
-      }
 
       &:last-child {
         margin-bottom: 0;
@@ -125,13 +119,27 @@
         background-color: $cSubBlack;
       }
     }
+
+    @media (min-width:600px) {
+      &>span {
+        width: 35px;
+        height: 1px;
+        display: block;
+        margin-bottom: 9px;
+        transition: transform 0.7s;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
   }
 }
 
 // メニューオープン
 .menu-open {
   &.mobile-menu {
-    z-index: 1000;
+    z-index: 3000;
     transition: all 0.4s;
     transform: none;
 
@@ -165,7 +173,22 @@
 
       &:nth-child(3) {
         transition-delay: 140ms;
-        transform: translateY(-8px) rotate(-135deg);
+        transform: translateY(-6px) rotate(-135deg);
+      }
+    }
+  }
+
+  @media (min-width:600px) {
+    .mobile-menu__btn {
+      &>span {
+
+        &:nth-child(1) {
+          transform: translateY(10px) rotate(135deg);
+        }
+
+        &:nth-child(3) {
+          transform: translateY(-10px) rotate(-135deg);
+        }
       }
     }
   }
