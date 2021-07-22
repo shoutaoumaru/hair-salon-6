@@ -1703,11 +1703,13 @@ a {
   border: 1px solid #161616;
   display: inline-block;
   margin-bottom: 25px;
+  width: 45vw;
 }
 
 .mobile-menu .reserve-btn-wrap .reserve-btn span {
   position: relative;
-  display: inline-block;
+  display: block;
+  text-align: center;
   padding: 10px 20px 10px 10px;
   font-size: 12px;
 }
@@ -1740,6 +1742,10 @@ a {
   background-image: url(/images/common/icon-link-1-black.png);
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+.mobile-menu .reserve-btn-wrap .reserve-btn-tel span::after {
+  right: 22px;
 }
 
 .mobile-container {
