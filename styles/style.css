@@ -1672,7 +1672,7 @@ a {
   background-color: #fff;
 }
 
-.mobile-menu__ul {
+.mobile-menu__list {
   width: 100%;
   font-size: 0.9em;
   text-align: left;
@@ -1681,12 +1681,12 @@ a {
   padding-top: 130px;
 }
 
-.mobile-menu__li {
+.mobile-menu__item {
   opacity: 0;
   margin-bottom: 35px;
 }
 
-.mobile-menu__li a {
+.mobile-menu__item a {
   color: #474747;
 }
 
@@ -1768,6 +1768,13 @@ a {
     right: 12px;
     width: 18px;
     height: 18px;
+  }
+  .mobile-menu__list {
+    padding-left: 10vw;
+    font-size: 1.2rem;
+  }
+  .mobile-menu__item {
+    margin-bottom: 55px;
   }
 }
 
