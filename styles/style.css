@@ -1678,7 +1678,7 @@ a {
   text-align: left;
   list-style: none;
   padding-left: 35px;
-  padding-top: 170px;
+  padding-top: 140px;
 }
 
 .mobile-menu__li {
@@ -1702,7 +1702,7 @@ a {
 .mobile-menu .reserve-btn-wrap .reserve-btn {
   border: 1px solid #161616;
   display: inline-block;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .mobile-menu .reserve-btn-wrap .reserve-btn span {
