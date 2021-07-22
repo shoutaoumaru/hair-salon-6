@@ -15,36 +15,8 @@
   &__nav {
     display: block;
     height: 100%;
-    width: 55%;
+    width: 65%;
     background-color: #fff;
-
-    & address {
-      padding-left: 35px;
-
-      & em {
-        display: block;
-        font-size: 10px;
-        letter-spacing: 0.2em;
-      }
-
-      & a {
-        display: inline-block;
-        padding: 8px 6px 8px 0;
-
-        & span {
-          display: inline-block;
-          border-bottom: 1px solid #295282;
-          font-size: 16px;
-          font-weight: bold;
-          letter-spacing: 0.02em;
-        }
-      }
-
-      & p {
-        font-size: 0.8em;
-        letter-spacing: 0.01em;
-      }
-    }
   }
 
   &__ul {
@@ -65,15 +37,58 @@
     }
   }
 
-  & address {
-    & a {
-      color: $cSubBlack;
-    }
-  }
+  .reserve-btn-wrap {
+    padding: 0 10px 0 35px;
 
-  .btn-reserve {
-    width: 80%;
-    margin: 20px auto;
+    & h4 {
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+
+    .reserve-btn {
+      border: 1px solid $cBlack;
+      display: inline-block;
+      margin-bottom: 30px;
+
+      & span {
+        position: relative;
+        display: inline-block;
+        padding: 10px 20px 10px 10px;
+        font-size: 12px;
+
+        &::after {
+          content: '';
+          display: inline-block;
+          position: absolute;
+          top: 13px;
+          right: 5px;
+          height: 12px;
+          width: 12px;
+          background-image: url(/images/common/icon-tel.png);
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+      }
+    }
+
+    .reserve-btn-net {
+      & span {
+        position: relative;
+
+        &::after {
+          content: '';
+          display: inline-block;
+          position: absolute;
+          top: 13px;
+          right: 5px;
+          height: 12px;
+          width: 12px;
+          background-image: url(/images/common/icon-link-1-black.png);
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+      }
+    }
   }
 }
 
