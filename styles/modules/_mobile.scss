@@ -49,7 +49,7 @@
       border: 1px solid $cBlack;
       display: inline-block;
       margin-bottom: 25px;
-      width: 45vw;
+      width: 172px;
 
       & span {
         position: relative;
@@ -57,31 +57,19 @@
         text-align: center;
         padding: 10px 20px 10px 10px;
         font-size: 12px;
-
-        &::after {
-          content: '';
-          display: inline-block;
-          position: absolute;
-          top: 13px;
-          right: 5px;
-          height: 12px;
-          width: 12px;
-          background-image: url(/images/common/icon-tel.png);
-          background-size: contain;
-          background-repeat: no-repeat;
-        }
       }
     }
 
     .reserve-btn-net {
       & span {
         position: relative;
+        letter-spacing: 2px;
 
         &::after {
           content: '';
           display: inline-block;
           position: absolute;
-          top: 13px;
+          top: 12px;
           right: 5px;
           height: 12px;
           width: 12px;
@@ -97,7 +85,42 @@
         letter-spacing: 4px;
 
         &::after {
-          right: 12px;
+          content: '';
+          display: inline-block;
+          position: absolute;
+          top: 13px;
+          right: 10px;
+          height: 12px;
+          width: 12px;
+          background-image: url(/images/common/icon-tel.png);
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+      }
+    }
+  }
+
+  @media (min-width:600px) {
+    .reserve-btn-wrap {
+      padding-left: 10vw;
+
+      h4 {
+        font-size: 18px;
+      }
+
+      .reserve-btn {
+        width: 240px;
+
+        & span {
+          padding: 15px 30px 15px 20px;
+          font-size: 16px;
+
+          &::after {
+            top: 16px;
+            right: 12px;
+            width: 18px;
+            height: 18px;
+          }
         }
       }
     }
