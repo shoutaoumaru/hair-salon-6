@@ -1744,8 +1744,12 @@ a {
   background-repeat: no-repeat;
 }
 
+.mobile-menu .reserve-btn-wrap .reserve-btn-tel span {
+  letter-spacing: 4px;
+}
+
 .mobile-menu .reserve-btn-wrap .reserve-btn-tel span::after {
-  right: 22px;
+  right: 12px;
 }
 
 .mobile-container {

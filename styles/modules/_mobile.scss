@@ -94,8 +94,10 @@
 
     .reserve-btn-tel {
       & span {
+        letter-spacing: 4px;
+
         &::after {
-          right: 22px;
+          right: 12px;
         }
       }
     }
