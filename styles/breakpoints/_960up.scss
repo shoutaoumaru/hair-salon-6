@@ -95,7 +95,6 @@ Stylesheet: 960px以上のモニタで適用
 //#about
 .p-about {
   &__img {
-
     &.left,
     &.right {
       height: 360px;
@@ -172,7 +171,7 @@ Stylesheet: 960px以上のモニタで適用
   }
 }
 
-//#news 
+//#news
 .p-news {
   padding: 10vw 0 0 0;
 
@@ -197,9 +196,8 @@ Stylesheet: 960px以上のモニタで適用
   }
 }
 
-//#style 
+//#style
 .p-style {
-
   & .swiper-container2,
   & .swiper-container3 {
     height: 350px;
@@ -210,7 +208,7 @@ Stylesheet: 960px以上のモニタで適用
   }
 }
 
-//#information 
+//#information
 .p-info {
   padding: 10vw 0 15vw 0;
 
@@ -292,7 +290,7 @@ Stylesheet: 960px以上のモニタで適用
   }
 
   &__desc {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 
   &__list {
@@ -305,6 +303,18 @@ Stylesheet: 960px以上のモニタで適用
 
   &__desc {
     font-size: 1rem;
+  }
+
+  .sns-link {
+    & span {
+      font-size: 25px;
+      &::before {
+        height: 24px;
+        width: 24px;
+        top: 0px;
+        right: 10px;
+      }
+    }
   }
 }
 
@@ -332,7 +342,7 @@ Stylesheet: 960px以上のモニタで適用
   }
 }
 
-//* * * * * * news-page * * * * * * 
+//* * * * * * news-page * * * * * *
 .c-news {
   padding-top: 20vw;
 

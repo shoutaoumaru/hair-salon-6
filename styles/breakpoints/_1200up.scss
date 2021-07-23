@@ -37,12 +37,11 @@ Stylesheet: 1200px以上のモニタで適用
   }
 }
 
-//#top 
+//#top
 .p-top {
   padding: 0 0 10vw 0;
 
   & .swiper-container {
-
     & .view-sp {
       display: none;
     }
@@ -81,7 +80,7 @@ Stylesheet: 1200px以上のモニタで適用
   }
 }
 
-//#about 
+//#about
 .p-about {
   padding-top: 5vw;
 
@@ -142,7 +141,6 @@ Stylesheet: 1200px以上のモニタで適用
   }
 
   &__txt {
-
     & .txt01,
     & .txt02 {
       padding-top: 0;
@@ -177,7 +175,7 @@ Stylesheet: 1200px以上のモニタで適用
   }
 }
 
-//.p-footer 
+//.p-footer
 .p-footer {
   padding: 8vw 0;
 
@@ -200,6 +198,18 @@ Stylesheet: 1200px以上のモニタで適用
 
     & p {
       margin-top: 4vw;
+    }
+  }
+
+  .sns-link {
+    & span {
+      font-size: 25px;
+      &::before {
+        height: 24px;
+        width: 24px;
+        top: 0px;
+        right: 10px;
+      }
     }
   }
 }

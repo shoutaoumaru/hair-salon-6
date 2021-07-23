@@ -1,7 +1,7 @@
-//* * * * * * setting * * * * * * * 
+//* * * * * * setting * * * * * * *
 body {
-  font-family: 'Josefin Sans', sans-serif;
-  font-family: 'Noto Serif JP', serif;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Noto Serif JP", serif;
 }
 
 img {
@@ -44,7 +44,7 @@ a {
 }
 
 .c-txt-xs {
-  font-size: .8rem;
+  font-size: 0.8rem;
   letter-spacing: 2px;
   line-height: 2;
   color: $cSubBlack;
@@ -52,7 +52,7 @@ a {
 
 .page-link {
   font-weight: bold;
-  font-size: .9rem;
+  font-size: 0.9rem;
   color: rgb(66, 66, 66);
 }
 
@@ -70,7 +70,7 @@ a {
       position: absolute;
       top: 50%;
       left: 0;
-      content: '';
+      content: "";
       display: inline-block;
       height: 1px;
       width: 8vw;
@@ -95,10 +95,9 @@ a {
     line-height: 2.2;
     color: $cSubBlack;
     font-weight: 100;
-    font-size: .9rem;
+    font-size: 0.9rem;
     margin-bottom: 4vw;
   }
-
 }
 
 .c-txt-vertical {
@@ -107,7 +106,7 @@ a {
   left: 3%;
   color: #bd9c8a;
   writing-mode: vertical-lr;
-  font-size: .8rem;
+  font-size: 0.8rem;
   letter-spacing: 3px;
   z-index: 1000;
 }
@@ -172,7 +171,7 @@ a {
   padding-bottom: 5px;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -199,7 +198,7 @@ a {
     font-size: 16px;
 
     &::before {
-      content: '';
+      content: "";
       display: inline-block;
       position: absolute;
       top: 0;
@@ -212,7 +211,7 @@ a {
     }
 
     &::after {
-      content: '';
+      content: "";
       display: inline-block;
       position: absolute;
       top: 10px;
@@ -292,7 +291,7 @@ a {
     bottom: 0;
     left: 0;
     background-color: rgba(31, 31, 31, 0.9);
-    opacity: .7;
+    opacity: 0.7;
     height: 6.5vh;
     width: 100%;
     z-index: 2000;
@@ -338,14 +337,14 @@ a {
     }
   }
 
-  @media (min-width:960px) {
+  @media (min-width: 960px) {
     & .pc-container {
       display: block;
     }
   }
 }
 
-//#top 
+//#top
 .p-top {
   position: relative;
   padding: 0 0 40vw 0;
@@ -368,13 +367,11 @@ a {
     & .sub {
       & p {
         font-weight: 300;
-        font-size: .9rem;
+        font-size: 0.9rem;
         line-height: 2;
         color: $cWhite;
       }
     }
-
-
   }
 
   & .swiper-container {
@@ -406,7 +403,7 @@ a {
     margin: 10vw -10vw 0 -10vw;
 
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       top: 0;
       right: 0;
@@ -441,10 +438,9 @@ a {
     line-height: 3;
     z-index: 1000;
   }
-
 }
 
-//#menu 
+//#menu
 .p-about {
   position: relative;
   padding: 15vw 0;
@@ -490,7 +486,7 @@ a {
       height: 160px;
 
       & img {
-        box-shadow: 20px 30px 45px rgb(199, 199, 199)
+        box-shadow: 20px 30px 45px rgb(199, 199, 199);
       }
 
       & .simpleParallax {
@@ -556,7 +552,6 @@ a {
 
 // menu
 .p-menu {
-
   &__title {
     & p {
       margin-bottom: -20px;
@@ -618,9 +613,8 @@ a {
     letter-spacing: 3px;
 
     &__en {
-      font-size: .7rem;
+      font-size: 0.7rem;
     }
-
   }
 
   &__title {
@@ -642,11 +636,9 @@ a {
     z-index: 100;
     background-color: $cSubWhite;
     box-shadow: 20px 25px 45px rgb(226, 226, 226);
-    ;
-
     &-title {
       padding: 10px 0;
-      font-size: .9rem;
+      font-size: 0.9rem;
     }
   }
 }
@@ -736,7 +728,7 @@ a {
 
     & p {
       margin-top: 3vw;
-      font-size: .8rem;
+      font-size: 0.8rem;
     }
 
     & .g-map {
@@ -746,14 +738,14 @@ a {
       padding-bottom: 5px;
       display: inline-block;
       margin-top: 5vw;
-      font-size: .8rem;
+      font-size: 0.8rem;
       border-bottom: 1px solid $cSubBlack;
 
       &::before {
         position: absolute;
         top: 2px;
         left: 0;
-        content: '';
+        content: "";
         height: 20px;
         width: 20px;
         background-image: url(/images/common/icon-map.png);
@@ -765,7 +757,7 @@ a {
   }
 }
 
-//.p-recruit 
+//.p-recruit
 .p-recruit {
   &__tit {
     margin-bottom: 20px;
@@ -817,10 +809,9 @@ a {
   & .view-more {
     padding-right: 0;
   }
-
 }
 
-//#footer 
+//#footer
 .p-footer {
   padding: 10vw 0;
   background-color: rgb(238, 231, 231);
@@ -879,7 +870,6 @@ a {
         width: 22px;
       }
     }
-
   }
 
   & .sns-fb {
@@ -910,17 +900,16 @@ a {
         width: 22px;
       }
     }
-
   }
 
   & .copyright {
     text-align: center;
     margin-top: 5vw;
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 }
 
-//* * * * * * * * * staff-page * * * * * * * * * * 
+//* * * * * * * * * staff-page * * * * * * * * * *
 .c-staff {
   padding: 5vw 0;
   letter-spacing: 3px;
@@ -937,10 +926,9 @@ a {
 
     & p {
       margin-top: 10vw;
-      font-size: .7rem;
+      font-size: 0.7rem;
       line-height: 2;
     }
-
   }
 
   &__img {
@@ -961,16 +949,35 @@ a {
 
   &__name {
     text-align: center;
-    font-size: .9rem;
+    font-size: 0.9rem;
     margin: 15px 0;
   }
 
   &__desc {
-    font-size: .6rem;
+    font-size: 0.6rem;
+  }
+
+  .sns-link {
+    & span {
+      position: relative;
+      padding-left: 30px;
+      font-size: 16px;
+      &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "";
+        display: inline-block;
+        background-image: url(/images/common/icon-insta-gr.png);
+        background-size: contain;
+        height: 20px;
+        width: 20px;
+      }
+    }
   }
 }
 
-//* * * * * * * * * recruit-page * * * * * * * * * * 
+//* * * * * * * * * recruit-page * * * * * * * * * *
 .c-recruit {
   padding: 15vw 0;
   letter-spacing: 3px;
@@ -988,15 +995,14 @@ a {
 
     & p {
       margin-top: 10vw;
-      font-size: .7rem;
+      font-size: 0.7rem;
       line-height: 2;
     }
-
   }
 
   &__list {
     margin-top: 3vw;
-    font-size: .7rem;
+    font-size: 0.7rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -1016,7 +1022,7 @@ a {
       border-bottom: 1px solid rgb(148, 148, 148);
 
       &::before {
-        content: '';
+        content: "";
         display: inline-block;
         position: absolute;
         top: 0;
@@ -1037,15 +1043,15 @@ a {
 
   &__name {
     text-align: center;
-    font-size: .7rem;
+    font-size: 0.7rem;
   }
 
   &__desc {
-    font-size: .5rem;
+    font-size: 0.5rem;
   }
 }
 
-//* * * * * * news-page * * * * * * * 
+//* * * * * * news-page * * * * * * *
 .c-news {
   padding-top: 20vw;
   text-transform: uppercase;
@@ -1091,7 +1097,7 @@ a {
       width: 10vw;
       height: 10vw;
       border-radius: 100%;
-      border: 1px solid #C4CCD1;
+      border: 1px solid #c4ccd1;
       background: #fff;
       margin: 0 1.3vw;
     }
@@ -1117,13 +1123,13 @@ a {
       }
     }
 
-    @media (max-width:767px) {
+    @media (max-width: 767px) {
       & .next {
         display: none;
       }
     }
 
-    @media (min-width:768px) {
+    @media (min-width: 768px) {
       & .page-numbers:not(.next):not(.prev) {
         width: 40px;
         height: 40px;
@@ -1137,7 +1143,7 @@ a {
       }
     }
 
-    @media (min-width:960px) {
+    @media (min-width: 960px) {
       & .page-numbers:not(.next):not(.prev) {
         width: 60px;
         height: 60px;
@@ -1151,7 +1157,7 @@ a {
 
   .c-news__contents {
     line-height: 2;
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 
   .c-news__title {
@@ -1164,7 +1170,7 @@ a {
   }
 }
 
-//* * * * * * news-single-page * * * * * * * 
+//* * * * * * news-single-page * * * * * * *
 .c-news-sl {
   & .c-container {
     padding: 0 5vw;
@@ -1184,7 +1190,7 @@ a {
     color: $cSubBlack;
 
     & p {
-      font-size: .9rem;
+      font-size: 0.9rem;
     }
   }
 

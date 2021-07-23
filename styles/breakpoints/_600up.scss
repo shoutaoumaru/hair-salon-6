@@ -4,7 +4,6 @@ Stylesheet: 600px以上のモニタで適用
 
 ******************************************************************/
 
-
 .c-txt-md {
   font-size: 1.6rem;
 }
@@ -14,7 +13,7 @@ Stylesheet: 600px以上のモニタで適用
 }
 
 .c-txt-xs {
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 .c-txt-vertical {
@@ -53,7 +52,6 @@ Stylesheet: 600px以上のモニタで適用
 
 //header
 .header {
-
   & .sp-navbtn {
     display: none;
   }
@@ -95,7 +93,6 @@ Stylesheet: 600px以上のモニタで適用
   margin-bottom: 10vw;
 
   &__img {
-
     &.left,
     &.right {
       height: 290px;
@@ -119,7 +116,6 @@ Stylesheet: 600px以上のモニタで適用
 //#special
 .p-special {
   &__img {
-
     & img {
       width: 50%;
       height: 72%;
@@ -149,7 +145,7 @@ Stylesheet: 600px以上のモニタで適用
   }
 }
 
-//.p-menu 
+//.p-menu
 .p-menu {
   &__block {
     width: 45%;
@@ -174,7 +170,7 @@ Stylesheet: 600px以上のモニタで適用
   }
 }
 
-//.p-info 
+//.p-info
 .p-info {
   padding: 20vw 0 0 0;
 
@@ -206,7 +202,7 @@ Stylesheet: 600px以上のモニタで適用
   }
 }
 
-//.p-recruit 
+//.p-recruit
 .p-recruit {
   margin-top: 10vw;
 
@@ -297,7 +293,7 @@ Stylesheet: 600px以上のモニタで適用
       padding-left: 76px;
 
       & em {
-        font-size: .9rem;
+        font-size: 0.9rem;
       }
     }
   }
@@ -312,7 +308,7 @@ Stylesheet: 600px以上のモニタで適用
     }
 
     & p {
-      font-size: .8rem;
+      font-size: 0.8rem;
     }
   }
 
@@ -325,7 +321,7 @@ Stylesheet: 600px以上のモニタで適用
   }
 
   &__text {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 }
 
@@ -344,7 +340,19 @@ Stylesheet: 600px以上のモニタで適用
   }
 
   &__desc {
-    font-size: .8rem;
+    font-size: 0.8rem;
+  }
+
+  .sns-link {
+    & span {
+      font-size: 25px;
+      &::before {
+        height: 24px;
+        width: 24px;
+        top: 0px;
+        right: 10px;
+      }
+    }
   }
 }
 
