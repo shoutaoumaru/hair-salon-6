@@ -332,7 +332,8 @@ Stylesheet: 600px以上のモニタで適用
   }
 
   &__item {
-    margin-bottom: 20px;
+    position: relative;
+    margin-bottom: 40px;
   }
 
   &__name {
@@ -344,13 +345,21 @@ Stylesheet: 600px以上のモニタで適用
   }
 
   .sns-link {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -30px;
+    margin: auto;
+
     & span {
-      font-size: 25px;
+      position: relative;
+      font-size: 1rem;
       &::before {
-        height: 24px;
-        width: 24px;
+        position: absolute;
+        height: 1rem;
+        width: 1rem;
         top: 0px;
-        right: 10px;
+        right: 0px;
       }
     }
   }

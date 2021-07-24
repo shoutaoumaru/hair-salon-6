@@ -943,8 +943,9 @@ a {
   }
 
   &__item {
+    position: relative;
+    margin-bottom: 40px;
     width: 45%;
-    margin-bottom: 30px;
   }
 
   &__name {
@@ -958,10 +959,16 @@ a {
   }
 
   .sns-link {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -30px;
+    margin: auto;
+
     & span {
       position: relative;
-      padding-left: 30px;
-      font-size: 16px;
+      padding-left: 20px;
+      font-size: 0.6rem;
       &::before {
         position: absolute;
         top: 0;
@@ -970,8 +977,9 @@ a {
         display: inline-block;
         background-image: url(/images/common/icon-insta-gr.png);
         background-size: contain;
-        height: 20px;
-        width: 20px;
+        background-repeat: no-repeat;
+        height: 12px;
+        width: 12px;
       }
     }
   }

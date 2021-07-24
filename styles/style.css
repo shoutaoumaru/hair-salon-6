@@ -1009,8 +1009,9 @@ a {
 }
 
 .c-staff__item {
+  position: relative;
+  margin-bottom: 40px;
   width: 45%;
-  margin-bottom: 30px;
 }
 
 .c-staff__name {
@@ -1023,10 +1024,18 @@ a {
   font-size: 0.6rem;
 }
 
+.c-staff .sns-link {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -30px;
+  margin: auto;
+}
+
 .c-staff .sns-link span {
   position: relative;
-  padding-left: 30px;
-  font-size: 16px;
+  padding-left: 20px;
+  font-size: 0.6rem;
 }
 
 .c-staff .sns-link span::before {
@@ -1037,8 +1046,9 @@ a {
   display: inline-block;
   background-image: url(/images/common/icon-insta-gr.png);
   background-size: contain;
-  height: 20px;
-  width: 20px;
+  background-repeat: no-repeat;
+  height: 12px;
+  width: 12px;
 }
 
 .c-recruit {
@@ -2433,7 +2443,8 @@ Stylesheet: 600px以上のモニタで適用
     height: 240px;
   }
   .c-staff__item {
-    margin-bottom: 20px;
+    position: relative;
+    margin-bottom: 40px;
   }
   .c-staff__name {
     font-size: 1rem;
@@ -2441,14 +2452,23 @@ Stylesheet: 600px以上のモニタで適用
   .c-staff__desc {
     font-size: 0.8rem;
   }
+  .c-staff .sns-link {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -30px;
+    margin: auto;
+  }
   .c-staff .sns-link span {
-    font-size: 25px;
+    position: relative;
+    font-size: 1rem;
   }
   .c-staff .sns-link span::before {
-    height: 24px;
-    width: 24px;
+    position: absolute;
+    height: 1rem;
+    width: 1rem;
     top: 0px;
-    right: 10px;
+    right: 0px;
   }
   .c-news-sl {
     padding: 10vw 0 0 0;
@@ -2727,12 +2747,7 @@ Stylesheet: 960px以上のモニタで適用
   .c-staff__desc {
     font-size: 1rem;
   }
-  .c-staff .sns-link span {
-    font-size: 25px;
-  }
   .c-staff .sns-link span::before {
-    height: 24px;
-    width: 24px;
     top: 0px;
     right: 10px;
   }
@@ -2934,12 +2949,7 @@ Stylesheet: 1200px以上のモニタで適用
   .c-staff__title p {
     margin-top: 4vw;
   }
-  .c-staff .sns-link span {
-    font-size: 25px;
-  }
   .c-staff .sns-link span::before {
-    height: 24px;
-    width: 24px;
     top: 0px;
     right: 10px;
   }
