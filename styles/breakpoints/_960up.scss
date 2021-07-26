@@ -95,14 +95,19 @@ Stylesheet: 960px以上のモニタで適用
 //#about
 .p-about {
   &__img {
+
     &.left,
     &.right {
       height: 360px;
     }
 
     & img {
-      width: 35%;
+      height: 80%;
     }
+  }
+
+  .cover-bg {
+    top: 65%;
   }
 }
 
@@ -169,6 +174,21 @@ Stylesheet: 960px以上のモニタで適用
   & h3 {
     font-size: 1.8rem;
   }
+
+  &__img {
+    & img {
+      height: 100%;
+    }
+
+    &.left {
+      margin-bottom: 3vw;
+    }
+
+    &.right {
+      margin-bottom: 5vw;
+    }
+  }
+
 }
 
 //#news
@@ -198,6 +218,7 @@ Stylesheet: 960px以上のモニタで適用
 
 //#style
 .p-style {
+
   & .swiper-container2,
   & .swiper-container3 {
     height: 350px;

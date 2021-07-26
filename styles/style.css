@@ -488,8 +488,7 @@ a {
 }
 
 .p-about__img img {
-  width: 40%;
-  height: 70%;
+  width: 60%;
 }
 
 .p-about__img .simpleParallax {
@@ -2267,26 +2266,33 @@ Stylesheet: 600px以上のモニタで適用
     margin-bottom: 10vw;
   }
   .p-about__img.left, .p-about__img.right {
-    height: 290px;
+    height: 370px;
   }
   .p-about__img.left {
     margin-top: 20vw;
   }
   .p-about__img.right {
-    margin-top: 10vw;
+    margin-top: 0;
   }
   .p-about__img img {
+    width: 50%;
     height: 63%;
+  }
+  .p-about .cover-bg {
+    top: 50%;
   }
   .p-special__img img {
     width: 50%;
-    height: 72%;
   }
   .p-special__img.left {
     margin-top: 10vw;
+    margin-bottom: 3vw;
+  }
+  .p-special__img.right {
+    margin-bottom: 0;
   }
   .p-style {
-    padding: 10vw 0 10vw 0;
+    padding: 0 0 10vw 0;
   }
   .p-style .swiper-container2,
   .p-style .swiper-container3 {
@@ -2408,20 +2414,6 @@ Stylesheet: 600px以上のモニタで適用
   .p-footer .copyright {
     margin-top: 0;
     font-size: 1.2rem;
-  }
-  .mobile-menu__ul {
-    font-size: 1.2rem;
-    padding-left: 76px;
-    padding-top: 250px;
-  }
-  .mobile-menu__li {
-    margin-bottom: 60px;
-  }
-  .mobile-menu__nav address {
-    padding-left: 76px;
-  }
-  .mobile-menu__nav address em {
-    font-size: 0.9rem;
   }
   .c-recruit__title span {
     padding-top: 3vw;
@@ -2596,7 +2588,10 @@ Stylesheet: 960px以上のモニタで適用
     height: 360px;
   }
   .p-about__img img {
-    width: 35%;
+    height: 80%;
+  }
+  .p-about .cover-bg {
+    top: 65%;
   }
   .p-message {
     margin-top: 10vw;
@@ -2642,6 +2637,15 @@ Stylesheet: 960px以上のモニタで適用
   }
   .p-special h3 {
     font-size: 1.8rem;
+  }
+  .p-special__img img {
+    height: 100%;
+  }
+  .p-special__img.left {
+    margin-bottom: 3vw;
+  }
+  .p-special__img.right {
+    margin-bottom: 5vw;
   }
   .p-news {
     padding: 10vw 0 0 0;

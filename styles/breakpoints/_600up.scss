@@ -93,9 +93,10 @@ Stylesheet: 600px以上のモニタで適用
   margin-bottom: 10vw;
 
   &__img {
+
     &.left,
     &.right {
-      height: 290px;
+      height: 370px;
     }
 
     &.left {
@@ -103,13 +104,17 @@ Stylesheet: 600px以上のモニタで適用
     }
 
     &.right {
-      margin-top: 10vw;
+      margin-top: 0;
     }
 
     & img {
-      // width: 50%;
+      width: 50%;
       height: 63%;
     }
+  }
+
+  .cover-bg {
+    top: 50%;
   }
 }
 
@@ -118,18 +123,22 @@ Stylesheet: 600px以上のモニタで適用
   &__img {
     & img {
       width: 50%;
-      height: 72%;
     }
 
     &.left {
       margin-top: 10vw;
+      margin-bottom: 3vw;
+    }
+
+    &.right {
+      margin-bottom: 0;
     }
   }
 }
 
 //#style
 .p-style {
-  padding: 10vw 0 10vw 0;
+  padding: 0 0 10vw 0;
 
   & .swiper-container2,
   & .swiper-container3 {
@@ -276,29 +285,6 @@ Stylesheet: 600px以上のモニタで適用
   }
 }
 
-//mobile-menu
-.mobile-menu {
-  &__ul {
-    font-size: 1.2rem;
-    padding-left: 76px;
-    padding-top: 250px;
-  }
-
-  &__li {
-    margin-bottom: 60px;
-  }
-
-  &__nav {
-    & address {
-      padding-left: 76px;
-
-      & em {
-        font-size: 0.9rem;
-      }
-    }
-  }
-}
-
 //* * * * * * recruit-page * * * * * * *
 .c-recruit {
   &__title {
@@ -354,6 +340,7 @@ Stylesheet: 600px以上のモニタで適用
     & span {
       position: relative;
       font-size: 1rem;
+
       &::before {
         position: absolute;
         height: 1rem;

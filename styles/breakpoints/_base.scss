@@ -457,8 +457,7 @@ a {
 
   &__img {
     & img {
-      width: 40%;
-      height: 70%;
+      width: 60%;
     }
 
     & .simpleParallax {
@@ -636,6 +635,7 @@ a {
     z-index: 100;
     background-color: $cSubWhite;
     box-shadow: 20px 25px 45px rgb(226, 226, 226);
+
     &-title {
       padding: 10px 0;
       font-size: 0.9rem;
@@ -969,6 +969,7 @@ a {
       position: relative;
       padding-left: 20px;
       font-size: 0.6rem;
+
       &::before {
         position: absolute;
         top: 0;
