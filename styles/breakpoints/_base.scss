@@ -1,1214 +1,955 @@
 //* * * * * * setting * * * * * * *
 body {
   font-family: "Josefin Sans", sans-serif;
-  font-family: "Noto Serif JP", serif;
+  font-family: "Noto Serif JP", serif
 }
 
 img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover
 }
 
 a {
-  color: $cBlack;
+  color: $cBlack
 }
 
 .c-container {
-  padding: 0 10vw;
+  padding: 0 10vw
 }
 
 .superwrapper {
-  overflow: hidden;
+  overflow: hidden
 }
 
 .c-txt-lr {
   font-size: 2rem;
   letter-spacing: 7px;
   line-height: 2;
-  color: $cSubBlack;
+  color: $cSubBlack
 }
 
 .c-txt-md {
   font-size: 1.2rem;
   letter-spacing: 3px;
   line-height: 2;
-  color: $cSubBlack;
+  color: $cSubBlack
 }
 
 .c-txt-sm {
   font-size: 1rem;
   letter-spacing: 3px;
   line-height: 2;
-  color: $cSubBlack;
+  color: $cSubBlack
 }
 
 .c-txt-xs {
-  font-size: 0.8rem;
+  font-size: .8rem;
   letter-spacing: 2px;
   line-height: 2;
-  color: $cSubBlack;
+  color: $cSubBlack
 }
 
 .page-link {
-  font-weight: bold;
-  font-size: 0.9rem;
-  color: rgb(66, 66, 66);
+  font-weight: 700;
+  font-size: .9rem;
+  color: #424242
 }
 
 .c-img {
   margin: 0 -5vw;
-  height: 55vh;
+  height: 55vh
 }
 
 .c-title {
-  & .txt {
-    position: relative;
-    padding-left: 12vw;
-
-    &::before {
-      position: absolute;
-      top: 50%;
-      left: 0;
-      content: "";
-      display: inline-block;
-      height: 1px;
-      width: 8vw;
-      background-color: $cGray;
-    }
-  }
-}
-
-.c-txtarea {
-  position: absolute;
-  top: 60%;
-  left: 0;
-  margin: 0 5vw;
-  padding: 5vw;
-  padding-bottom: 8vw;
-  background-color: rgb(248, 245, 245);
-  border: 1px solid rgb(216, 216, 216);
-  box-shadow: 3px 3px 3px rgb(235, 235, 235);
-
-  & .ja {
-    letter-spacing: 3px;
-    line-height: 2.2;
-    color: $cSubBlack;
-    font-weight: 100;
-    font-size: 0.9rem;
-    margin-bottom: 4vw;
-  }
-}
-
-.c-txt-vertical {
-  position: absolute;
-  top: 40%;
-  left: 3%;
-  color: #bd9c8a;
-  writing-mode: vertical-lr;
-  font-size: 0.8rem;
-  letter-spacing: 3px;
-  z-index: 1000;
-}
-
-.c-txt02 {
-  font-size: 1.1rem;
-  margin-bottom: 5vw;
-}
-
-.view-more {
-  margin-top: 10vw;
-  text-align: right;
-  padding-left: 3vw;
-  // padding-right: 8vw;
-  padding-bottom: 1.5vw;
-  letter-spacing: 3px;
-
-  & a {
-    color: $cBlack;
-
-    & span {
-      border-bottom: 1px solid $cGray;
-    }
-  }
-}
-
-.more-link {
-  color: $cSubBlack;
-}
-
-.icon-tel {
-  display: inline-block;
-  position: absolute;
-  top: 4px;
-  right: 0;
-  background-image: url(/images/common/tel-white.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 12px;
-  width: 12px;
-}
-
-.icon-net {
-  display: inline-block;
-  position: absolute;
-  top: 4px;
-  right: 0;
-  background-image: url(/images/common/icon-link-1-white.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 13px;
-  width: 13px;
-}
-
-.icon-insta {
-  position: relative;
-  padding-left: 10vw;
-  color: $cBlack;
-  border-bottom: 1px solid $cGray;
-  padding-bottom: 5px;
+  &txtposition: relative;
+  padding-left: 12vw;
 
   &::before {
+    ;
+    position: absolute;
+    top: 50%;
+    left: 0;
     content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-image: url(/images/common/icon-insta-gr.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 20px;
-    width: 20px;
-  }
-}
-
-.insta-link {
-  margin-top: 40px;
-  margin-right: 25px;
-  text-align: right;
-
-  & span {
-    position: relative;
     display: inline-block;
-    padding-left: 25px;
-    padding-right: 15px;
-    border-bottom: 1px solid $cSubBlack;
-    font-size: 16px;
-
-    &::before {
-      content: "";
-      display: inline-block;
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 20px;
-      width: 20px;
-      background-image: url(/images/common/icon-insta-gr.png);
-      background-repeat: no-repeat;
-      background-size: contain;
-    }
-
-    &::after {
-      content: "";
-      display: inline-block;
-      position: absolute;
-      top: 10px;
-      right: 0;
-      height: 8px;
-      width: 8px;
-      background-image: url(/images/common/arrow.png);
-      background-repeat: no-repeat;
-      background-size: contain;
-    }
-  }
-}
-
-//#header
-.header {
-  z-index: 2000;
-  height: 70px;
-  width: 100%;
-
-  & .logo__img {
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    & a {
-      height: 100%;
-    }
+    height: 1px;
+    width: 8vw;
+    background-color: $cGray
   }
 
-  & .logo {
-    background-image: url(/images/common/riv_logo.png);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin: 4.2vw 0 0 5vw;
-    height: 44px;
-    width: 115px;
-  }
-
-  // ***スクロールでロゴの色を変えるとき
-  // & .menu-open {
-  //   &.logo {
-  //     transition: all .3s;
-  //     background-image: url(/images/home/riv_logo.png) !important;
-  //     background-position: center;
-  //     background-size: contain;
-  //     background-repeat: no-repeat;
-  //     margin: 5vw 0 0 5vw;
-  //     height: 44px;
-  //     width: 137px;
-  //   }
-  // }
-
-  // & .inview {
-  //   &.logo {
-  //     transition: all .3s;
-  //     background-image: url(/images/home/riv_logo-white.png);
-  //     background-position: center;
-  //     background-size: contain;
-  //     background-repeat: no-repeat;
-  //     margin: 5vw 0 0 5vw;
-  //     height: 44px;
-  //     width: 137px;
-  //   }
-  // }
-
-  & .logo-gr {
-    overflow: hidden;
-  }
-
-  & .pc-container {
-    display: none;
-  }
-
-  & .sp-navbtn {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(31, 31, 31, 0.9);
-    opacity: 0.7;
-    height: 6.5vh;
-    width: 100%;
-    z-index: 2000;
-    transition: all.3s;
-
-    &__container {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      width: 77vw;
-      margin: auto;
-
-      & a {
-        position: relative;
-        color: $cWhite;
-        font-size: 14px;
-        letter-spacing: 1px;
-        display: block;
-        padding-right: 18px;
-      }
-
-      & .tel {
-        letter-spacing: 2px;
-      }
-
-      & a:hover,
-      a:active {
-        text-decoration: underline;
-      }
-    }
-  }
-
-  & .hide {
-    &.sp-navbtn {
-      visibility: hidden;
-      transform: translateY(50px);
-      transition: all 0.6s;
-    }
-  }
-
-  @media (min-width: 960px) {
-    & .pc-container {
-      display: block;
-    }
-  }
-}
-
-//#top
-.p-top {
-  position: relative;
-  padding: 0 0 40vw 0;
-
-  &__txtarea {
-    position: absolute;
-    top: 30%;
-    left: 5%;
-    z-index: 100;
-
-    & .main {
-      padding-bottom: 9vw;
-
-      & p {
-        font-weight: 100;
-        color: $cWhite;
-      }
-    }
-
-    & .sub {
-      & p {
-        font-weight: 300;
-        font-size: 0.9rem;
-        line-height: 2;
-        color: $cWhite;
-      }
-    }
-  }
-
-  & .swiper-container {
-    height: 75vh;
-    width: 80%;
-
-    & .swiper-slide {
-      text-align: center;
-    }
-  }
-
-  .bg-cover {
-    position: absolute;
-    bottom: 60px;
-    left: 0;
-    background-color: rgb(238, 231, 231);
-    height: 40vh;
-    width: 100%;
-    z-index: -1;
-  }
-}
-
-//#message
-.p-message {
-  &__img {
-    position: relative;
-    height: 80vw;
-    max-height: 450px;
-    margin: 10vw -10vw 0 -10vw;
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 0;
-      margin: auto;
-      background-color: rgb(64, 61, 66);
-      opacity: 0.5;
-      height: 100%;
-      width: 100%;
-    }
-  }
-
-  &__tit {
-    & p {
-      margin-bottom: -20px;
-    }
-  }
-
-  &__txt {
-    margin-top: 5vw;
-  }
-
-  & .img-txt {
-    position: absolute;
-    top: 35%;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    color: $cWhite;
-    text-align: center;
-    letter-spacing: 3px;
-    line-height: 3;
-    z-index: 1000;
-  }
-}
-
-//#menu
-.p-about {
-  position: relative;
-  padding: 15vw 0;
-
-  &__tit {
-    & p {
-      margin-bottom: -20px;
-    }
-  }
-
-  &__txt {
-    margin: 5vw 0;
-  }
-
-  &__img {
-    & img {
-      width: 60%;
-    }
-
-    & .simpleParallax {
-      overflow: visible !important;
-    }
-
-    &.left {
-      display: flex;
-      justify-content: flex-start;
-      margin-top: 30vw;
-      padding-left: 30px;
-      height: 160px;
-
-      & img {
-        box-shadow: 20px 30px 45px rgb(199, 199, 199);
-      }
-    }
-
-    &.right {
-      display: flex;
-      justify-content: flex-end;
-      margin-top: 25vw;
-      padding-right: 30px;
-
-      height: 160px;
-
-      & img {
-        box-shadow: 20px 30px 45px rgb(199, 199, 199);
-      }
-
-      & .simpleParallax {
-        display: flex;
-        justify-content: flex-end;
-      }
-    }
-  }
-
-  & .cover-bg {
+  .c-txtarea {
     position: absolute;
     top: 60%;
     left: 0;
-    background-color: rgb(238, 231, 231);
-    height: 110vw;
-    width: 100%;
-    z-index: -1;
-    clip-path: polygon(0 0, 0% 100%, 100% 0);
+    margin: 0 5vw;
+    padding: 5vw;
+    padding-bottom: 8vw;
+    background-color: #f8f5f5;
+    border: 1px solid #d8d8d8;
+    box-shadow: 3px 3px 3px #ebebeb;
+    &jaletter-spacing: 3px;
+    line-height: 2.2;
+    color: $cSubBlack;
+    font-weight: 100;
+    font-size: .9rem;
+    margin-bottom: 4vw
   }
 
-  & .c-txt-vertical {
-    top: 68%;
-  }
-}
-
-//#style
-.p-style {
-  position: relative;
-  padding: 12vw 0 30vw 0;
-
-  &__container {
-    padding-left: 10vw;
-  }
-
-  & .hero {
-    position: relative;
-    padding-left: 10vw;
-  }
-
-  & .menu-name {
+  .c-txt-vertical {
     position: absolute;
-    top: 0;
-    left: 0;
-    color: #fff;
-  }
-
-  &__tit {
-    margin-bottom: 30px;
-
-    & p {
-      margin-bottom: -20px;
-    }
-  }
-
-  &__txt {
-    margin: 5vw 0;
-  }
-
-  & .c-txt-vertical {
-    top: 55%;
-  }
-}
-
-// menu
-.p-menu {
-  &__title {
-    & p {
-      margin-bottom: -20px;
-    }
-
-    text-align: center;
-  }
-
-  &__main {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: stretch;
-    margin: 60px auto 0;
-  }
-
-  &__block {
-    width: 100%;
-    margin-bottom: 5vw;
-  }
-
-  &__table {
-    width: 100%;
-    font-size: 13px;
-
-    & tr {
-      display: flex;
-      justify-content: space-between;
-
-      &:last-of-type {
-        margin-top: 10px;
-      }
-    }
-  }
-}
-
-// staff
-.p-staff {
-  padding-bottom: 25vw;
-
-  &__title {
-    & p {
-      margin-bottom: -20px;
-    }
-  }
-
-  &__img {
-    width: 75%;
-    height: 220px;
-  }
-
-  &__name__ja,
-  &__name__en {
-    display: block;
-  }
-
-  &__name {
-    margin-bottom: 10px;
+    top: 40%;
+    left: 3%;
+    color: #bd9c8a;
+    writing-mode: vertical-lr;
+    font-size: .8rem;
     letter-spacing: 3px;
-
-    &__en {
-      font-size: 0.7rem;
-    }
+    z-index: 1000
   }
 
-  &__title {
-    margin-top: 80px;
-    margin-bottom: 50px;
-    // text-align: center;
-    font-weight: 300;
+  .c-txt02 {
+    font-size: 1.1rem;
+    margin-bottom: 5vw
   }
 
-  &__block {
-    padding-bottom: 15vw;
+  .view-more {
+    margin-top: 10vw;
+    text-align: right;
+    padding-left: 3vw;
+    padding-bottom: 1.5vw;
+    letter-spacing: 3px;
+    &acolor: $cBlack;
+    &spanborder-bottom: 1px solid $cGray
   }
 
-  &__desc {
-    position: relative;
-    border-top: 3px solid rgb(226, 226, 226);
-    margin: -10vw -7vw 0 13vw;
-    padding: 3vw;
-    z-index: 100;
-    background-color: $cSubWhite;
-    box-shadow: 20px 25px 45px rgb(226, 226, 226);
-
-    &-title {
-      padding: 10px 0;
-      font-size: 0.9rem;
-    }
-  }
-}
-
-//#special
-.p-special {
-  position: relative;
-
-  &__tit {
-    position: relative;
-
-    & p {
-      margin-bottom: -20px;
-    }
+  .more-link {
+    color: $cSubBlack
   }
 
-  &__img {
-    & img {
-      width: 60%;
-      height: 85%;
-    }
-
-    &.left {
-      display: flex;
-      justify-content: flex-start;
-      margin-top: 20vw;
-      margin-bottom: 10vw;
-    }
-
-    &.right {
-      display: flex;
-      justify-content: flex-end;
-      margin-top: 14vw;
-
-      & .simpleParallax {
-        display: flex;
-        justify-content: flex-end;
-      }
-    }
-  }
-
-  & .cover-bg {
+  .icon-tel {
+    display: inline-block;
     position: absolute;
-    top: 30%;
+    top: 4px;
     right: 0;
-    background-color: rgb(238, 231, 231);
-    height: 140vw;
-    width: 100%;
-    z-index: -1;
-    clip-path: polygon(0 0, 100% 100%, 100% 0);
+    background-image: url(/images/common/tel-white.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 12px;
+    width: 12px
   }
 
-  &__txt {
-    & span {
+  .icon-net {
+    display: inline-block;
+    position: absolute;
+    top: 4px;
+    right: 0;
+    background-image: url(/images/common/icon-link-1-white.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 13px;
+    width: 13px
+  }
+
+  .icon-insta {
+    position: relative;
+    padding-left: 10vw;
+    color: $cBlack;
+    border-bottom: 1px solid $cGray;
+    padding-bottom: 5px;
+
+    &::before {
+      ;
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-image: url(/images/common/icon-insta-gr.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      height: 20px;
+      width: 20px
+    }
+
+    .insta-link {
+      margin-top: 40px;
+      margin-right: 25px;
+      text-align: right;
+      &spanposition: relative;
       display: inline-block;
-      padding-top: 5vw;
-    }
-  }
-
-  & .c-txt-vertical {
-    top: 78%;
-  }
-}
-
-//#information
-.p-info {
-  position: relative;
-  padding: 30vw 0 15vw 0;
-
-  &__img {
-    margin-top: 3vw;
-  }
-
-  &__tit {
-    & p {
-      margin-bottom: -20px;
-    }
-  }
-
-  &__txt {
-    margin: 5vw 0;
-  }
-
-  &__item {
-    margin-top: 8vw;
-    letter-spacing: 2px;
-
-    & p {
-      margin-top: 3vw;
-      font-size: 0.8rem;
-    }
-
-    & .g-map {
-      position: relative;
-      color: $cBlack;
       padding-left: 25px;
-      padding-bottom: 5px;
-      display: inline-block;
-      margin-top: 5vw;
-      font-size: 0.8rem;
+      padding-right: 15px;
       border-bottom: 1px solid $cSubBlack;
+      font-size: 16px;
 
       &::before {
-        position: absolute;
-        top: 2px;
-        left: 0;
+        ;
         content: "";
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0;
         height: 20px;
         width: 20px;
-        background-image: url(/images/common/icon-map.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-      }
-    }
-  }
-}
-
-//.p-recruit
-.p-recruit {
-  &__tit {
-    margin-bottom: 20px;
-
-    & p {
-      margin-bottom: -20px;
-    }
-  }
-}
-
-//#news
-.p-news {
-  position: relative;
-  padding: 15vw 0;
-
-  &__tit {
-    margin-bottom: 10vw;
-
-    & p {
-      margin-bottom: -20px;
-    }
-  }
-
-  &__txt {
-    margin: 5vw 0;
-  }
-
-  &__link {
-    display: block;
-    padding: 6vw 0;
-
-    & p {
-      margin-top: 2vw;
-    }
-  }
-
-  &__item {
-    border-bottom: 1px solid rgb(235, 235, 235);
-
-    &:first-child {
-      border-top: 1px solid rgb(235, 235, 235);
-    }
-  }
-
-  &__date {
-    color: $cGray;
-  }
-
-  & .view-more {
-    padding-right: 0;
-  }
-}
-
-//#footer
-.p-footer {
-  padding: 10vw 0;
-  background-color: rgb(238, 231, 231);
-
-  &__nav {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-
-    &__item {
-      width: 50%;
-    }
-  }
-
-  & .c-logo {
-    text-align: center;
-
-    & img {
-      width: 35%;
-      height: 35%;
-      object-fit: contain;
-    }
-  }
-
-  &__sns {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10vw;
-  }
-
-  & .sns-insta {
-    & .sns-link {
-      position: relative;
-      display: block;
-      float: left;
-      width: 44px;
-      height: 44px;
-      margin: 0 5px;
-      background-color: #fff;
-      border-radius: 22px;
-      box-shadow: 0 12px 16px rgb(182, 182, 182);
-      transition: box-shadow 1s;
-
-      & i {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        margin: auto;
         background-image: url(/images/common/icon-insta-gr.png);
-        background-size: contain;
-        background-position: center;
         background-repeat: no-repeat;
-        height: 22px;
-        width: 22px;
+        background-size: contain
       }
-    }
-  }
-
-  & .sns-fb {
-    & .sns-link {
-      position: relative;
-      display: block;
-      float: left;
-      width: 44px;
-      height: 44px;
-      margin: 0 5px;
-      background-color: #fff;
-      border-radius: 22px;
-      box-shadow: 0 12px 16px rgb(182, 182, 182);
-      transition: box-shadow 1s;
-
-      & i {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        margin: auto;
-        background-image: url(/images/common/facebook-ico.png);
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 22px;
-        width: 22px;
-      }
-    }
-  }
-
-  & .copyright {
-    text-align: center;
-    margin-top: 5vw;
-    font-size: 0.8rem;
-  }
-}
-
-//* * * * * * * * * staff-page * * * * * * * * * *
-.c-staff {
-  padding: 5vw 0;
-  letter-spacing: 3px;
-  line-height: 2;
-
-  &__title {
-    & span {
-      padding-top: 8vw;
-      text-align: center;
-      font-weight: 100;
-      font-size: 2rem;
-      display: block;
-    }
-
-    & p {
-      margin-top: 10vw;
-      font-size: 0.7rem;
-      line-height: 2;
-    }
-  }
-
-  &__img {
-    height: 180px;
-  }
-
-  &__list {
-    margin-top: 10vw;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  &__item {
-    position: relative;
-    margin-bottom: 40px;
-    width: 45%;
-  }
-
-  &__name {
-    text-align: center;
-    font-size: 0.9rem;
-    margin: 15px 0;
-  }
-
-  &__desc {
-    font-size: 0.6rem;
-  }
-
-  .sns-link {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: -30px;
-    margin: auto;
-
-    & span {
-      position: relative;
-      padding-left: 20px;
-      font-size: 0.6rem;
-
-      &::before {
-        position: absolute;
-        top: 0;
-        left: 0;
-        content: "";
-        display: inline-block;
-        background-image: url(/images/common/icon-insta-gr.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-        height: 12px;
-        width: 12px;
-      }
-    }
-  }
-}
-
-//* * * * * * * * * recruit-page * * * * * * * * * *
-.c-recruit {
-  padding: 15vw 0;
-  letter-spacing: 3px;
-  line-height: 2;
-
-  &__title {
-    & span {
-      padding-top: 8vw;
-      text-align: center;
-      font-weight: 100;
-      font-size: 1.8rem;
-      display: block;
-      color: $cSubBlack;
-    }
-
-    & p {
-      margin-top: 10vw;
-      font-size: 0.7rem;
-      line-height: 2;
-    }
-  }
-
-  &__list {
-    margin-top: 3vw;
-    font-size: 0.7rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  &__btn {
-    text-align: right;
-    letter-spacing: 2px;
-    line-height: 1.5;
-    font-size: 1rem;
-    margin-top: 30px;
-
-    & span {
-      position: relative;
-      padding-left: 20px;
-      padding-bottom: 8px;
-      border-bottom: 1px solid rgb(148, 148, 148);
-
-      &::before {
-        content: "";
-        display: inline-block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 15px;
-        width: 15px;
-        background-image: url(/images/common/icon-tel.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-      }
-    }
-  }
-
-  &__item {
-    margin-top: 30px;
-  }
-
-  &__name {
-    text-align: center;
-    font-size: 0.7rem;
-  }
-
-  &__desc {
-    font-size: 0.5rem;
-  }
-}
-
-//* * * * * * news-page * * * * * * *
-.c-news {
-  padding-top: 20vw;
-  text-transform: uppercase;
-
-  &__link {
-    display: block;
-    padding: 5vw 0;
-
-    & p {
-      margin-top: 2vw;
-    }
-  }
-
-  &__date {
-    color: $cGray;
-  }
-
-  &__item {
-    border-bottom: 1px solid rgb(235, 235, 235);
-
-    &:first-child {
-      border-top: 1px solid rgb(235, 235, 235);
-    }
-  }
-
-  .page-numbers {
-    margin: 12vw 0;
-  }
-
-  .page-numbers:not(.next):not(.prev) {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: $cBlack;
-
-    & .current {
-      border: 1px solid rgba(0, 0, 0, 0);
-      background: #dffde2 !important;
-    }
-
-    & .page-numbers:not(.next):not(.prev) {
-      width: 10vw;
-      height: 10vw;
-      border-radius: 100%;
-      border: 1px solid #c4ccd1;
-      background: #fff;
-      margin: 0 1.3vw;
-    }
-
-    & .next {
-      position: relative;
-      padding-right: 22px;
-      top: 0;
 
       &::after {
-        transition: all 0.2s cubic-bezier(0, 0, 0.58, 1);
         content: "";
+        display: inline-block;
         position: absolute;
+        top: 10px;
         right: 0;
+        height: 8px;
+        width: 8px;
         background-image: url(/images/common/arrow.png);
-        background-position: right center;
         background-repeat: no-repeat;
-        background-size: 100% 100%;
-        top: 5px;
-        width: 15px;
-        height: 15px;
-        margin-left: 8px;
-      }
-    }
-
-    @media (max-width: 767px) {
-      & .next {
-        display: none;
-      }
-    }
-
-    @media (min-width: 768px) {
-      & .page-numbers:not(.next):not(.prev) {
-        width: 40px;
-        height: 40px;
-        font-size: 1.2rem;
+        background-size: contain
       }
 
-      & .next {
+      //#header
+      .header {
+        z-index: 2000;
+        height: 70px;
+        width: 100%;
+        &logo__imgposition: absolute;
         top: 0;
-        font-size: 1.2rem;
-        padding-left: 20px;
-      }
-    }
-
-    @media (min-width: 960px) {
-      & .page-numbers:not(.next):not(.prev) {
-        width: 60px;
-        height: 60px;
+        left: 0;
+        &aheight: 100%
       }
 
-      & .next {
-        top: 0;
+      & .logo {
+        background-image: url(/images/common/riv_logo.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin: 4.2vw 0 0 5vw;
+        height: 44px;
+        width: 115px
       }
-    }
-  }
 
-  .c-news__contents {
-    line-height: 2;
-    font-size: 0.8rem;
-  }
+      // ***スクロールでロゴの色を変えるとき
+      // & .menu-open{}// & .inview{}& .logo-gr{overflow:hidden}& .pc-container{display:none}& .sp-navbtn{position:fixed;bottom:0;left:0;background-color:rgba(31,31,31,0.9);opacity:.7;height:6.5vh;width:100%;z-index:2000;transition:all.3s;&__containerdisplay:flex;align-items:center;justify-content:space-between;position:absolute;top:0;bottom:0;left:0;right:0;width:77vw;margin:auto;&aposition:relative;color:$cWhite;font-size:14px;letter-spacing:1px;display:block;padding-right:18px}& .tel{letter-spacing:2px}& a:hover,a:active{text-decoration:underline}& .hide{&sp-navbtnvisibility:hidden;transform:translateY(50px);transition:all .6s}@media (min-width: 960px){& .pc-container{display:block}}//#top
+      .p-top {
+        position: relative;
+        padding: 0 0 40vw;
+        &__txtareaposition: absolute;
+        top: 30%;
+        left: 5%;
+        z-index: 100;
+        &mainpadding-bottom: 9vw;
+        &pfont-weight: 100;
+        color: $cWhite
+      }
 
-  .c-news__title {
-    text-align: center;
-    margin-bottom: 10vw;
-  }
+      & .sub {
+        &pfont-weight: 300;
+        font-size: .9rem;
+        line-height: 2;
+        color: $cWhite
+      }
 
-  .c-news__block {
-    padding: 8vw 0;
-  }
-}
+      & .swiper-container {
+        height: 75vh;
+        width: 80%;
+        &swiper-slidetext-align: center
+      }
 
-//* * * * * * news-single-page * * * * * * *
-.c-news-sl {
-  & .c-container {
-    padding: 0 5vw;
-  }
+      .bg-cover {
+        position: absolute;
+        bottom: 60px;
+        left: 0;
+        background-color: #eee7e7;
+        height: 40vh;
+        width: 100%;
+        z-index: -1
+      }
 
-  &__date {
-    color: $cGray;
-  }
+      //#message
+      .p-message {
+        &__imgposition: relative;
+        height: 80vw;
+        max-height: 450px;
+        margin: 10vw -10vw 0;
 
-  &__list {
-    padding: 15vw 0 0 0;
-  }
+        &::after {
+          ;
+          content: "";
+          position: absolute;
+          top: 0;
+          right: 0;
+          margin: auto;
+          background-color: #403d42;
+          opacity: .5;
+          height: 100%;
+          width: 100%
+        }
 
-  &__contents {
-    padding: 10vw 0;
-    line-height: 2;
-    color: $cSubBlack;
+        &__tit {
+          &pmargin-bottom: -20px
+        }
 
-    & p {
-      font-size: 0.9rem;
-    }
-  }
+        &__txt {
+          margin-top: 5vw
+        }
 
-  &__link {
-    margin: 0 0 10vw 0;
-    text-align: right;
+        & .img-txt {
+          position: absolute;
+          top: 35%;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          margin: auto;
+          color: $cWhite;
+          text-align: center;
+          letter-spacing: 3px;
+          line-height: 3;
+          z-index: 1000
+        }
 
-    & a {
-      border-bottom: 1px solid rgb(114, 114, 114);
-    }
-  }
-}
+        //#menu
+        .p-about {
+          position: relative;
+          padding: 15vw 0;
+          &__titpmargin-bottom: -20px
+        }
+
+        &__txt {
+          margin: 5vw 0
+        }
+
+        &__img {
+          &imgwidth: 60%
+        }
+
+        & .simpleParallax {
+          overflow: visible !important
+        }
+
+        &.left {
+          display: flex;
+          justify-content: flex-start;
+          margin-top: 30vw;
+          padding-left: 30px;
+          height: 160px;
+          &imgbox-shadow: 20px 30px 45px #c7c7c7
+        }
+
+        &.right {
+          display: flex;
+          justify-content: flex-end;
+          margin-top: 25vw;
+          padding-right: 30px;
+          height: 160px;
+          &imgbox-shadow: 20px 30px 45px #c7c7c7
+        }
+
+        & .simpleParallax {
+          display: flex;
+          justify-content: flex-end
+        }
+
+        & .cover-bg {
+          position: absolute;
+          top: 60%;
+          left: 0;
+          background-color: #eee7e7;
+          height: 110vw;
+          width: 100%;
+          z-index: -1;
+          clip-path: polygon(0 0, 0% 100%, 100% 0)
+        }
+
+        & .c-txt-vertical {
+          top: 68%
+        }
+
+        //#style
+        .p-style {
+          position: relative;
+          padding: 12vw 0 30vw;
+          &__containerpadding-left: 10vw
+        }
+
+        & .hero {
+          position: relative;
+          padding-left: 10vw
+        }
+
+        & .menu-name {
+          position: absolute;
+          top: 0;
+          left: 0;
+          color: #fff
+        }
+
+        &__tit {
+          margin-bottom: 30px;
+          &pmargin-bottom: -20px
+        }
+
+        &__txt {
+          margin: 5vw 0
+        }
+
+        & .c-txt-vertical {
+          top: 55%
+        }
+
+        // menu
+        .p-menu {
+          &__titlepmargin-bottom: -20px
+        }
+
+        &__main {
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: space-between;
+          align-items: stretch;
+          margin: 60px auto 0
+        }
+
+        &__block {
+          width: 100%;
+          margin-bottom: 5vw
+        }
+
+        &__table {
+          width: 100%;
+          font-size: 13px;
+          &trdisplay: flex;
+          justify-content: space-between;
+
+          &:last-of-type {
+            ;
+            margin-top: 10px
+          }
+
+          // staff
+          .p-staff {
+            padding-bottom: 25vw;
+            &__titlepmargin-bottom: -20px
+          }
+
+          &__img {
+            width: 75%;
+            height: 220px
+          }
+
+          &__name__ja,
+          &__name__en {
+            display: block
+          }
+
+          &__name {
+            margin-bottom: 10px;
+            letter-spacing: 3px;
+            &__enfont-size: .7rem
+          }
+
+          &__title {
+            margin-top: 80px;
+            margin-bottom: 50px;
+            font-weight: 300
+          }
+
+          &__block {
+            padding-bottom: 15vw
+          }
+
+          &__desc {
+            position: relative;
+            border-top: 3px solid #e2e2e2;
+            margin: -10vw -7vw 0 13vw;
+            padding: 3vw;
+            z-index: 100;
+            background-color: $cSubWhite;
+            box-shadow: 20px 25px 45px #e2e2e2;
+            &-titlepadding: 10px 0;
+            font-size: .9rem
+          }
+
+          //#special
+          .p-special {
+            position: relative;
+            &__titposition: relative;
+            &pmargin-bottom: -20px
+          }
+
+          &__img {
+            &imgwidth: 60%;
+            height: 85%
+          }
+
+          &.left {
+            display: flex;
+            justify-content: flex-start;
+            margin-top: 20vw;
+            margin-bottom: 10vw
+          }
+
+          &.right {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 14vw;
+            &simpleparallaxdisplay: flex;
+            justify-content: flex-end
+          }
+
+          & .cover-bg {
+            position: absolute;
+            top: 30%;
+            right: 0;
+            background-color: #eee7e7;
+            height: 140vw;
+            width: 100%;
+            z-index: -1;
+            clip-path: polygon(0 0, 100% 100%, 100% 0)
+          }
+
+          &__txt {
+            &spandisplay: inline-block;
+            padding-top: 5vw
+          }
+
+          & .c-txt-vertical {
+            top: 78%
+          }
+
+          //#information
+          .p-info {
+            position: relative;
+            padding: 30vw 0 15vw;
+            &__imgmargin-top: 3vw
+          }
+
+          &__tit {
+            &pmargin-bottom: -20px
+          }
+
+          &__txt {
+            margin: 5vw 0
+          }
+
+          &__item {
+            margin-top: 8vw;
+            letter-spacing: 2px;
+            &pmargin-top: 3vw;
+            font-size: .8rem
+          }
+
+          & .g-map {
+            position: relative;
+            color: $cBlack;
+            padding-left: 25px;
+            padding-bottom: 5px;
+            display: inline-block;
+            margin-top: 5vw;
+            font-size: .8rem;
+            border-bottom: 1px solid $cSubBlack;
+
+            &::before {
+              ;
+              position: absolute;
+              top: 2px;
+              left: 0;
+              content: "";
+              height: 20px;
+              width: 20px;
+              background-image: url(/images/common/icon-map.png);
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: contain
+            }
+
+            //.p-recruit
+            .p-recruit {
+              &__titmargin-bottom: 20px;
+              &pmargin-bottom: -20px
+            }
+
+            //#news
+            .p-news {
+              position: relative;
+              padding: 15vw 0;
+              &__titmargin-bottom: 10vw;
+              &pmargin-bottom: -20px
+            }
+
+            &__txt {
+              margin: 5vw 0
+            }
+
+            &__link {
+              display: block;
+              padding: 6vw 0;
+              &pmargin-top: 2vw
+            }
+
+            &__item {
+              border-bottom: 1px solid #ebebeb;
+
+              &:first-child {
+                ;
+                border-top: 1px solid #ebebeb
+              }
+
+              &__date {
+                color: $cGray
+              }
+
+              & .view-more {
+                padding-right: 0
+              }
+
+              //#footer
+              .p-footer {
+                padding: 10vw 0;
+                background-color: #eee7e7;
+                &__navdisplay: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                &__itemwidth: 50%
+              }
+
+              & .c-logo {
+                text-align: center;
+                &imgwidth: 35%;
+                height: 35%;
+                object-fit: contain
+              }
+
+              &__sns {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 10vw
+              }
+
+              & .sns-insta {
+                &sns-linkposition: relative;
+                display: block;
+                float: left;
+                width: 44px;
+                height: 44px;
+                margin: 0 5px;
+                background-color: #fff;
+                border-radius: 22px;
+                box-shadow: 0 12px 16px #b6b6b6;
+                transition: box-shadow 1s;
+                &iposition: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;
+                background-image: url(/images/common/icon-insta-gr.png);
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+                height: 22px;
+                width: 22px
+              }
+
+              & .sns-fb {
+                &sns-linkposition: relative;
+                display: block;
+                float: left;
+                width: 44px;
+                height: 44px;
+                margin: 0 5px;
+                background-color: #fff;
+                border-radius: 22px;
+                box-shadow: 0 12px 16px #b6b6b6;
+                transition: box-shadow 1s;
+                &iposition: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;
+                background-image: url(/images/common/facebook-ico.png);
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+                height: 22px;
+                width: 22px
+              }
+
+              & .copyright {
+                text-align: center;
+                margin-top: 5vw;
+                font-size: .8rem
+              }
+
+              //* * * * * * * * * staff-page * * * * * * * * * *
+              .c-staff {
+                padding: 5vw 0;
+                letter-spacing: 3px;
+                line-height: 2;
+                &__titlespanpadding-top: 8vw;
+                text-align: center;
+                font-weight: 100;
+                font-size: 2rem;
+                display: block
+              }
+
+              & p {
+                margin-top: 10vw;
+                font-size: .7rem;
+                line-height: 2
+              }
+
+              &__img {
+                height: 180px
+              }
+
+              &__list {
+                margin-top: 10vw;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between
+              }
+
+              &__item {
+                position: relative;
+                margin-bottom: 40px;
+                width: 45%
+              }
+
+              &__name {
+                text-align: center;
+                font-size: .9rem;
+                margin: 15px 0
+              }
+
+              &__desc {
+                font-size: .6rem
+              }
+
+              .sns-link {
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: -30px;
+                margin: auto;
+                &spanposition: relative;
+                padding-left: 20px;
+                font-size: .6rem;
+
+                &::before {
+                  ;
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  content: "";
+                  display: inline-block;
+                  background-image: url(/images/common/icon-insta-gr.png);
+                  background-size: contain;
+                  background-repeat: no-repeat;
+                  height: 12px;
+                  width: 12px
+                }
+
+                //* * * * * * * * * recruit-page * * * * * * * * * *
+                .c-recruit {
+                  padding: 15vw 0;
+                  letter-spacing: 3px;
+                  line-height: 2;
+                  &__titlespanpadding-top: 8vw;
+                  text-align: center;
+                  font-weight: 100;
+                  font-size: 1.8rem;
+                  display: block;
+                  color: $cSubBlack
+                }
+
+                & p {
+                  margin-top: 10vw;
+                  font-size: .7rem;
+                  line-height: 2
+                }
+
+                &__list {
+                  margin-top: 3vw;
+                  font-size: .7rem;
+                  display: flex;
+                  flex-wrap: wrap;
+                  justify-content: space-between
+                }
+
+                &__btn {
+                  text-align: right;
+                  letter-spacing: 2px;
+                  line-height: 1.5;
+                  font-size: 1rem;
+                  margin-top: 30px;
+                  &spanposition: relative;
+                  padding-left: 20px;
+                  padding-bottom: 8px;
+                  border-bottom: 1px solid #949494;
+
+                  &::before {
+                    ;
+                    content: "";
+                    display: inline-block;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 15px;
+                    width: 15px;
+                    background-image: url(/images/common/icon-tel.png);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: contain
+                  }
+
+                  &__item {
+                    margin-top: 30px
+                  }
+
+                  &__name {
+                    text-align: center;
+                    font-size: .7rem
+                  }
+
+                  &__desc {
+                    font-size: .5rem
+                  }
+
+                  //* * * * * * news-page * * * * * * *
+                  .c-news {
+                    text-transform: uppercase;
+                    &__linkdisplay: block;
+                    padding: 5vw 0;
+                    &pmargin-top: 2vw
+                  }
+
+                  &__date {
+                    color: $cGray
+                  }
+
+                  &__item {
+                    border-bottom: 1px solid #ebebeb;
+
+                    &:first-child {
+                      ;
+                      border-top: 1px solid #ebebeb
+                    }
+
+                    .page-numbers {
+                      margin: 12vw 0
+                    }
+
+                    .page-numbers:not(.next):not(.prev) {
+                      position: relative;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      color: $cBlack;
+                      &currentborder: 1px solid rgba(0, 0, 0, 0);
+                      background: #dffde2 !important
+                    }
+
+                    & .page-numbers:not(.next):not(.prev) {
+                      width: 10vw;
+                      height: 10vw;
+                      border-radius: 100%;
+                      border: 1px solid #c4ccd1;
+                      background: #fff;
+                      margin: 0 1.3vw
+                    }
+
+                    & .next {
+                      position: relative;
+                      padding-right: 22px;
+                      top: 0;
+
+                      &::after {
+                        ;
+                        transition: all .2s cubic-bezier(0, 0, 0.58, 1);
+                        content: "";
+                        position: absolute;
+                        right: 0;
+                        background-image: url(/images/common/arrow.png);
+                        background-position: right center;
+                        background-repeat: no-repeat;
+                        background-size: 100% 100%;
+                        top: 5px;
+                        width: 15px;
+                        height: 15px;
+                        margin-left: 8px
+                      }
+
+                      @media (max-width: 767px) {
+                        & .next {
+                          display: none
+                        }
+                      }
+
+                      @media (min-width: 768px) {
+                        & .page-numbers:not(.next):not(.prev) {
+                          width: 40px;
+                          height: 40px;
+                          font-size: 1.2rem
+                        }
+
+                        & .next {
+                          top: 0;
+                          font-size: 1.2rem;
+                          padding-left: 20px
+                        }
+                      }
+
+                      @media (min-width: 960px) {
+                        & .page-numbers:not(.next):not(.prev) {
+                          width: 60px;
+                          height: 60px
+                        }
+
+                        & .next {
+                          top: 0
+                        }
+                      }
+
+                      .c-news__contents {
+                        line-height: 2;
+                        font-size: .8rem
+                      }
+
+                      .c-news__title {
+                        text-align: center;
+                        margin-bottom: 10vw
+                      }
+
+                      .c-news__block {
+                        padding: 8vw 0
+                      }
+
+                      //* * * * * * news-single-page * * * * * * *
+                      .c-news-sl {
+                        &c-containerpadding: 0 5vw
+                      }
+
+                      &__date {
+                        color: $cGray
+                      }
+
+                      &__list {
+                        padding: 15vw 0 0
+                      }
+
+                      &__contents {
+                        padding: 10vw 0;
+                        line-height: 2;
+                        color: $cSubBlack;
+                        &pfont-size: .9rem
+                      }
+
+                      &__link {
+                        margin: 0 0 10vw;
+                        text-align: right;
+                        &aborder-bottom: 1px solid #727272
+                      }
