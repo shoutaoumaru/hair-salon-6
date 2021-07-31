@@ -1,4 +1,18 @@
 @charset "UTF-8";
+.cls-1,
+.cls-2 {
+  fill: none;
+  stroke-miterlimit: 10;
+}
+
+.cls-1 {
+  stroke: #231815;
+}
+
+.cls-2 {
+  stroke: #232339;
+}
+
 .svg-animation {
   display: none;
   padding: 17vw;
@@ -488,8 +502,7 @@ a {
 }
 
 .p-about__img img {
-  width: 40%;
-  height: 70%;
+  width: 60%;
 }
 
 .p-about__img .simpleParallax {
