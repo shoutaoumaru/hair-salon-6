@@ -1,3 +1,7 @@
+<?php
+  /* Template Name: recruit
+  */
+?>
 <!DOCTYPE html>
 <html lang="ja">
 

@@ -2,19 +2,7 @@
 <html lang="ja">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>美容室テンプレート6 | ホーム</title>
-  <link rel="stylesheet" href="/styles/vendor/logo-animation.min.css">
-  <link rel="stylesheet" href="/styles/vendor/bootstrap-reboot.css">
-  <link rel="stylesheet" href="/styles/vendor/animsition.min.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300&family=Noto+Serif+JP:wght@200&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="/styles/vendor/swiper.min.css">
-  <link rel="stylesheet" href="/styles/style.css">
+  <?php get_header(); ?>
 </head>
 
 <body class="animsition">
@@ -22,23 +10,6 @@
     <div class="svg-animation">
       <svg id="レイヤー_1" data-name="レイヤー 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380.06 99.83"
         width="380.05999755859375" height="99.83000183105469">
-        <defs>
-          <style>
-            .cls-1,
-            .cls-2 {
-              fill: none;
-              stroke-miterlimit: 10;
-            }
-
-            .cls-1 {
-              stroke: #231815;
-            }
-
-            .cls-2 {
-              stroke: #232339;
-            }
-          </style>
-        </defs>
         <path class="cls-1 svg-elem-1"
           d="M146.45,384.68c4.32,1.33,8.57,2.9,12.75,4.65a65.91,65.91,0,0,1,8.17-7.14,44.33,44.33,0,0,1,7.92-4.7L158.75,368l-24,13.83A102.37,102.37,0,0,1,146.45,384.68Z"
           transform="translate(-115.52 -367.37)"></path>

@@ -1,3 +1,7 @@
+<?php
+  /* Template Name: staff
+  */
+?>
 <!DOCTYPE html>
 <html lang="ja">
   <head>
