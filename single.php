@@ -2,25 +2,16 @@
 <html lang="ja">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>飲食店テンプレート1/NEWS/single</title>
-  <link rel="stylesheet" href="../styles/vendor/bootstrap-reboot.css">
-  <link rel="stylesheet" href="../styles/vendor/animsition.min.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100;400&family=Noto+Serif+JP:wght@200;400&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="../styles/style.css">
+  <title>飲食店テンプレート1 | お知らせ詳細</title>
+  <?php get_header(); ?>
 </head>
 
 <body>
   <div class="superwrapper animsition">
     <header id="header" class="header">
       <div class="mobile-container">
-        <div class=" logo__img">
-          <a class="animsition-link" href="/">
+        <div class="logo__img">
+          <a class="animsition-link" href="<?php echo esc_url( home_url('/')); ?>">
             <div class="logo"></div>
           </a>
         </div>
@@ -35,23 +26,23 @@
       <!-- /.mobile-container -->
       <div class="pc-container">
         <div class=" logo__img">
-          <a class="animsition-link" href="/">
+          <a class="animsition-link" href="<?php echo esc_url( home_url('/')); ?>">
             <div class="logo"></div>
           </a>
         </div>
         <nav class="pc-nav">
           <ul class="pc-nav-list">
             <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/"><span>top</span></a>
+              <a class="pc-nav-link animsition-link" href="<?php echo esc_url( home_url('/f')); ?>"><span>top</span></a>
             </li>
             <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/staff/staff.html"><span>staff</span></a>
+              <a class="pc-nav-link animsition-link" href="<?php echo esc_url( home_url('/staff')); ?>"><span>staff</span></a>
             </li>
             <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/recruit/recruit.html"><span>recruit</span></a>
+              <a class="pc-nav-link animsition-link" href="<?php echo esc_url( home_url('/recruit')); ?>"><span>recruit</span></a>
             </li>
             <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/news/news.html"><span>news</span></a>
+              <a class="pc-nav-link animsition-link" href="<?php echo esc_url( home_url('/news')); ?>"><span>news</span></a>
             </li>
             <li class="pc-nav-item">
               <a target="_blank" class="pc-nav-link reserve-btn"
@@ -76,23 +67,17 @@
         <ul class="c-news-sl__list">
           <li class="c-news-sl__block">
             <div class="c-news-sl__tit">
-              <p class="c-txt-md">新型コロナウィルス感染予防について。</p>
-              <span class="c-news-sl__date">2021.4.5</span>
+              <p class="c-txt-md"><?php the_title(); ?></p>
+              <span class="c-news-sl__date"><?php echo get_the_date(); ?></span>
             </div>
             <div class="c-news-sl__contents">
-              <p>2021年5月7日（金）より期間限定で、「芳醇フランボワーズチーズタルト」を国内全店舗にて販売いたします。
-
-                チーズムースにフランボワーズのジャムとピューレを配合し、クリームチーズの“コク”とフランボワーズの“甘酸っぱさ”が絶妙にマッチした、オリジナルの「フランボワーズチーズムース」に仕上げました。
-
-                クッキー生地では、フランボワーズのイメージから連想される“レッド”を表現。
-                ほんのりと感じられる「ココア」の風味が「フランボワーズチーズムース」との相性もぴったりです。
-              </p>
+              <?php the_post_thumbnail('thumbnail'); ?>
+              <p><?php the_content(); ?></p>
             </div>
           </li>
-
         </ul>
         <div class="c-news-sl__link">
-          <a class="more-link animsition-link" href="/news/news.html"><span class="readmore">一覧へ戻る</span></a>
+          <a class="more-link animsition-link" href="<?php echo esc_url( home_url('/news')); ?>"><span class="readmore">一覧へ戻る</span></a>
         </div>
       </div>
     </section>
@@ -101,14 +86,14 @@
       <div class="c-container">
         <div class="p-footer__sns">
           <div class="sns-insta">
-            <a class="sns-link" href="#"><i></i></a>
+            <a class="sns-link" href="https://www.instagram.com/" target="_blank"><i></i></a>
           </div>
           <div class="sns-fb">
-            <a class="sns-link" href="#"><i></i></a>
+            <a class="sns-link" href="https://www.facebook.com/" target="_blank"><i></i></a>
           </div>
         </div>
         <div class="c-logo">
-          <img src="/images/common/riv_logo.png" alt="">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/common/riv_logo.png" alt="">
         </div>
         <div class="copyright">
           &copy; RivRound.inc
@@ -120,16 +105,16 @@
       <nav class="mobile-menu__nav">
         <ul class="mobile-menu__list">
           <li class="mobile-menu__item">
-            <a class="animsition-link" href="/">TOP</a>
+            <a class="animsition-link" href="<?php echo esc_url( home_url('/')); ?>">TOP</a>
           </li>
           <li class="mobile-menu__item">
-            <a class="animsition-link" href="/staff/staff.html">STAFF</a>
+            <a class="animsition-link" href="<?php echo esc_url( home_url('/staff')); ?>">STAFF</a>
           </li>
           <li class="mobile-menu__item">
-            <a class="animsition-link" href="/recruit/recruit.html">RECRUIT</a>
+            <a class="animsition-link" href="<?php echo esc_url( home_url('/recruit')); ?>">RECRUIT</a>
           </li>
           <li class="mobile-menu__item">
-            <a class="animsition-link" href="/news/news.html">NEWS</a>
+            <a class="animsition-link" href="<?php echo esc_url( home_url('/news')); ?>">NEWS</a>
           </li>
         </ul>
         <div class="reserve-btn-wrap">
@@ -151,11 +136,7 @@
     <!-- /.mobile-menu -->
   </div>
   <!-- .superwrapper -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script src="../scripts/vendor/animsition.min.js"></script>
-  <script src="../scripts/libs/page.js"></script>
-  <script src="../scripts/libs/scroll.js"></script>
-  <script src="../scripts/libs/mobile-menu.js"></script>
+  <?php get_template_part('includes/c-footer'); ?>
 </body>
 
 </html>

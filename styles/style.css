@@ -1,4 +1,18 @@
 @charset "UTF-8";
+.cls-1,
+.cls-2 {
+  fill: none;
+  stroke-miterlimit: 10;
+}
+
+.cls-1 {
+  stroke: #231815;
+}
+
+.cls-2 {
+  stroke: #232339;
+}
+
 .svg-animation {
   display: none;
   padding: 17vw;
@@ -62,8 +76,8 @@
 }
 
 body {
-  font-family: "Josefin Sans", sans-serif;
-  font-family: "Noto Serif JP", serif;
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Noto Serif JP', serif;
 }
 
 img {
@@ -107,7 +121,7 @@ a {
 }
 
 .c-txt-xs {
-  font-size: 0.8rem;
+  font-size: .8rem;
   letter-spacing: 2px;
   line-height: 2;
   color: #474747;
@@ -115,7 +129,7 @@ a {
 
 .page-link {
   font-weight: bold;
-  font-size: 0.9rem;
+  font-size: .9rem;
   color: #424242;
 }
 
@@ -133,7 +147,7 @@ a {
   position: absolute;
   top: 50%;
   left: 0;
-  content: "";
+  content: '';
   display: inline-block;
   height: 1px;
   width: 8vw;
@@ -158,7 +172,7 @@ a {
   line-height: 2.2;
   color: #474747;
   font-weight: 100;
-  font-size: 0.9rem;
+  font-size: .9rem;
   margin-bottom: 4vw;
 }
 
@@ -170,7 +184,7 @@ a {
   -webkit-writing-mode: vertical-lr;
       -ms-writing-mode: tb-lr;
           writing-mode: vertical-lr;
-  font-size: 0.8rem;
+  font-size: .8rem;
   letter-spacing: 3px;
   z-index: 1000;
 }
@@ -205,7 +219,7 @@ a {
   position: absolute;
   top: 4px;
   right: 0;
-  background-image: url(/images/common/tel-white.png);
+  background-image: url(../images/common/tel-white.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -218,7 +232,7 @@ a {
   position: absolute;
   top: 4px;
   right: 0;
-  background-image: url(/images/common/icon-link-1-white.png);
+  background-image: url(../images/common/icon-link-1-white.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -235,11 +249,11 @@ a {
 }
 
 .icon-insta::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url(/images/common/icon-insta-gr.png);
+  background-image: url(../images/common/icon-insta-gr.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -263,27 +277,27 @@ a {
 }
 
 .insta-link span::before {
-  content: "";
+  content: '';
   display: inline-block;
   position: absolute;
   top: 0;
   left: 0;
   height: 20px;
   width: 20px;
-  background-image: url(/images/common/icon-insta-gr.png);
+  background-image: url(../images/common/icon-insta-gr.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 .insta-link span::after {
-  content: "";
+  content: '';
   display: inline-block;
   position: absolute;
   top: 10px;
   right: 0;
   height: 8px;
   width: 8px;
-  background-image: url(/images/common/arrow.png);
+  background-image: url(../images/common/arrow.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -305,7 +319,7 @@ a {
 }
 
 .header .logo {
-  background-image: url(/images/common/riv_logo.png);
+  background-image: url(../images/common/riv_logo.png);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -327,7 +341,7 @@ a {
   bottom: 0;
   left: 0;
   background-color: rgba(31, 31, 31, 0.9);
-  opacity: 0.7;
+  opacity: .7;
   height: 6.5vh;
   width: 100%;
   z-index: 2000;
@@ -409,7 +423,7 @@ a {
 
 .p-top__txtarea .sub p {
   font-weight: 300;
-  font-size: 0.9rem;
+  font-size: .9rem;
   line-height: 2;
   color: #fff;
 }
@@ -441,7 +455,7 @@ a {
 }
 
 .p-message__img::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   right: 0;
@@ -662,7 +676,7 @@ a {
 }
 
 .p-staff__name__en {
-  font-size: 0.7rem;
+  font-size: .7rem;
 }
 
 .p-staff__title {
@@ -688,7 +702,7 @@ a {
 
 .p-staff__desc-title {
   padding: 10px 0;
-  font-size: 0.9rem;
+  font-size: .9rem;
 }
 
 .p-special {
@@ -783,7 +797,7 @@ a {
 
 .p-info__item p {
   margin-top: 3vw;
-  font-size: 0.8rem;
+  font-size: .8rem;
 }
 
 .p-info__item .g-map {
@@ -793,7 +807,7 @@ a {
   padding-bottom: 5px;
   display: inline-block;
   margin-top: 5vw;
-  font-size: 0.8rem;
+  font-size: .8rem;
   border-bottom: 1px solid #474747;
 }
 
@@ -801,10 +815,10 @@ a {
   position: absolute;
   top: 2px;
   left: 0;
-  content: "";
+  content: '';
   height: 20px;
   width: 20px;
-  background-image: url(/images/common/icon-map.png);
+  background-image: url(../images/common/icon-map.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -925,7 +939,7 @@ a {
   right: 0;
   bottom: 0;
   margin: auto;
-  background-image: url(/images/common/icon-insta-gr.png);
+  background-image: url(../images/common/icon-insta-gr.png);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -957,7 +971,7 @@ a {
   right: 0;
   bottom: 0;
   margin: auto;
-  background-image: url(/images/common/facebook-ico.png);
+  background-image: url(../images/common/facebook-ico.png);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -968,7 +982,7 @@ a {
 .p-footer .copyright {
   text-align: center;
   margin-top: 5vw;
-  font-size: 0.8rem;
+  font-size: .8rem;
 }
 
 .c-staff {
@@ -987,7 +1001,7 @@ a {
 
 .c-staff__title p {
   margin-top: 10vw;
-  font-size: 0.7rem;
+  font-size: .7rem;
   line-height: 2;
 }
 
@@ -1008,46 +1022,18 @@ a {
 }
 
 .c-staff__item {
-  position: relative;
-  margin-bottom: 40px;
   width: 45%;
+  margin-bottom: 30px;
 }
 
 .c-staff__name {
   text-align: center;
-  font-size: 0.9rem;
+  font-size: .9rem;
   margin: 15px 0;
 }
 
 .c-staff__desc {
-  font-size: 0.6rem;
-}
-
-.c-staff .sns-link {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -30px;
-  margin: auto;
-}
-
-.c-staff .sns-link span {
-  position: relative;
-  padding-left: 20px;
-  font-size: 0.6rem;
-}
-
-.c-staff .sns-link span::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  content: "";
-  display: inline-block;
-  background-image: url(/images/common/icon-insta-gr.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 12px;
-  width: 12px;
+  font-size: .6rem;
 }
 
 .c-recruit {
@@ -1067,13 +1053,13 @@ a {
 
 .c-recruit__title p {
   margin-top: 10vw;
-  font-size: 0.7rem;
+  font-size: .7rem;
   line-height: 2;
 }
 
 .c-recruit__list {
   margin-top: 3vw;
-  font-size: 0.7rem;
+  font-size: .7rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1100,14 +1086,14 @@ a {
 }
 
 .c-recruit__btn span::before {
-  content: "";
+  content: '';
   display: inline-block;
   position: absolute;
   top: 0;
   left: 0;
   height: 15px;
   width: 15px;
-  background-image: url(/images/common/icon-tel.png);
+  background-image: url(../images/common/icon-tel.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1119,11 +1105,11 @@ a {
 
 .c-recruit__name {
   text-align: center;
-  font-size: 0.7rem;
+  font-size: .7rem;
 }
 
 .c-recruit__desc {
-  font-size: 0.5rem;
+  font-size: .5rem;
 }
 
 .c-news {
@@ -1179,7 +1165,7 @@ a {
   width: 10vw;
   height: 10vw;
   border-radius: 100%;
-  border: 1px solid #c4ccd1;
+  border: 1px solid #C4CCD1;
   background: #fff;
   margin: 0 1.3vw;
 }
@@ -1196,7 +1182,7 @@ a {
   content: "";
   position: absolute;
   right: 0;
-  background-image: url(/images/common/arrow.png);
+  background-image: url(../images/common/arrow.png);
   background-position: right center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -1237,7 +1223,7 @@ a {
 
 .c-news .c-news__contents {
   line-height: 2;
-  font-size: 0.8rem;
+  font-size: .8rem;
 }
 
 .c-news .c-news__title {
@@ -1268,7 +1254,7 @@ a {
 }
 
 .c-news-sl__contents p {
-  font-size: 0.9rem;
+  font-size: .9rem;
 }
 
 .c-news-sl__link {
@@ -1754,7 +1740,7 @@ a {
   right: 5px;
   height: 12px;
   width: 12px;
-  background-image: url(/images/common/icon-link-1-black.png);
+  background-image: url(../images/common/icon-link-1-black.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -1771,7 +1757,7 @@ a {
   right: 10px;
   height: 12px;
   width: 12px;
-  background-image: url(/images/common/icon-tel.png);
+  background-image: url(../images/common/icon-tel.png);
   background-size: contain;
   background-repeat: no-repeat;
 }

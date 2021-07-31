@@ -80,8 +80,8 @@
     <!-- /.svg-animation -->
     <header id="header" class="header">
       <div class="mobile-container">
-        <div class=" logo__img">
-          <a class="animsition-link" href="/">
+        <div class="logo__img">
+          <a class="animsition-link" href="<?php echo esc_url( home_url('/')); ?>">
             <div class="logo"></div>
           </a>
         </div>
@@ -96,23 +96,23 @@
       <!-- /.mobile-container -->
       <div class="pc-container">
         <div class=" logo__img">
-          <a class="animsition-link" href="/">
+          <a class="animsition-link" href="<?php echo esc_url( home_url('/')); ?>">
             <div class="logo"></div>
           </a>
         </div>
         <nav class="pc-nav">
           <ul class="pc-nav-list">
             <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/"><span>top</span></a>
+              <a class="pc-nav-link animsition-link" href="<?php echo esc_url( home_url('/f')); ?>"><span>top</span></a>
             </li>
             <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/staff/staff.html"><span>staff</span></a>
+              <a class="pc-nav-link animsition-link" href="<?php echo esc_url( home_url('/staff')); ?>"><span>staff</span></a>
             </li>
             <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/recruit/recruit.html"><span>recruit</span></a>
+              <a class="pc-nav-link animsition-link" href="<?php echo esc_url( home_url('/recruit')); ?>"><span>recruit</span></a>
             </li>
             <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/news/news.html"><span>news</span></a>
+              <a class="pc-nav-link animsition-link" href="<?php echo esc_url( home_url('/news')); ?>"><span>news</span></a>
             </li>
             <li class="pc-nav-item">
               <a target="_blank" class="pc-nav-link reserve-btn"
@@ -138,16 +138,16 @@
           <div class="swiper-container">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <img class="view-sp" src="/images/home/style_1@sp.jpg" />
-                <img class="view-pc" src="/images/home/style_1@pc.jpg" />
+                <img class="view-sp" src="<?php echo get_template_directory_uri(); ?>/images/home/style_1@sp.jpg" />
+                <img class="view-pc" src="<?php echo get_template_directory_uri(); ?>/images/home/style_1@pc.jpg" />
               </div>
               <div class="swiper-slide">
-                <img class="view-sp" src="/images/home/cut_3@sp.jpg" />
-                <img class="view-pc" src="/images/home/cut_3@pc.jpg" />
+                <img class="view-sp" src="<?php echo get_template_directory_uri(); ?>/images/home/cut_3@sp.jpg" />
+                <img class="view-pc" src="<?php echo get_template_directory_uri(); ?>/images/home/cut_3@pc.jpg" />
               </div>
               <div class="swiper-slide">
-                <img class="view-sp" src="/images/home/store_4@sp.jpg" />
-                <img class="view-pc" src="/images/home/store_4@pc.jpg" />
+                <img class="view-sp" src="<?php echo get_template_directory_uri(); ?>/images/home/store_4@sp.jpg" />
+                <img class="view-pc" src="<?php echo get_template_directory_uri(); ?>/images/home/store_4@pc.jpg" />
               </div>
             </div>
             <div class="p-top__textbox clip-js1 skew">
@@ -173,7 +173,7 @@
           </p>
         </div>
         <div class="p-message__img">
-          <img src="/images/home/store_2@pc.jpg" alt="">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/home/store_2@pc.jpg" alt="">
           <div class="img-txt clip-js left">
             <p>福岡の街で一番愛される、<br class="view-pc">美容室でありたい。
             </p>
@@ -203,10 +203,10 @@
         </div>
         <div class="p-about__photo">
           <div class="p-about__img left">
-            <img class="parallax-down" src="/images/home/style_7@pc.jpg" alt="">
+            <img class="parallax-down" src="<?php echo get_template_directory_uri(); ?>/images/home/style_7@pc.jpg" alt="">
           </div>
           <div class="p-about__img right">
-            <img class="parallax-up" src="/images/home/style_10.jpg" alt="">
+            <img class="parallax-up" src="<?php echo get_template_directory_uri(); ?>/images/home/style_10.jpg" alt="">
           </div>
         </div>
         <div class="cover-bg clip-js-bg skew"></div>
@@ -227,13 +227,13 @@
             <div class="swiper-container2">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <img src="/images/home/style_6.jpg" />
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/home/style_6.jpg" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="/images/home/style_8.jpg" />
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/home/style_8.jpg" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="/images/home/style_9.jpg" />
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/home/style_9.jpg" />
                 </div>
               </div>
             </div>
@@ -242,13 +242,13 @@
             <div class="swiper-container3">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <img src="/images/home/style_5@pc.jpg" />
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/home/style_5@pc.jpg" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="/images/home/style_11.jpg" />
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/home/style_11.jpg" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="/images/home/style_2.jpg" />
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/home/style_2.jpg" />
                 </div>
               </div>
             </div>
@@ -442,7 +442,7 @@
         <div class="p-staff__wrap">
           <div class="p-staff__block appear up">
             <div class="p-staff__img item">
-              <img src="images/home/biyousshi_mens@sp.jpg" />
+              <img src="<?php echo get_template_directory_uri(); ?>/images/home/biyousshi_mens@sp.jpg" />
             </div>
             <div class="p-staff__desc item">
               <h3 class="p-staff__name">
@@ -458,7 +458,7 @@
           </div>
           <div class="p-staff__block appear up">
             <div class="p-staff__img item">
-              <img src="images/home/biyoushi.lady@sp.jpg" />
+              <img src="<?php echo get_template_directory_uri(); ?>/images/home/biyoushi.lady@sp.jpg" />
             </div>
             <div class="p-staff__desc item">
               <h3 class="p-staff__name">
@@ -474,7 +474,7 @@
           </div>
           <div class="p-staff__block appear up">
             <div class="p-staff__img item">
-              <img src="images/home/staff_1@sp.jpg" />
+              <img src="<?php echo get_template_directory_uri(); ?>/images/home/staff_1@sp.jpg" />
             </div>
             <div class="p-staff__desc item">
               <h3 class="p-staff__name">
@@ -490,7 +490,7 @@
           </div>
         </div>
         <div class="view-more clip-js left">
-          <a class="animsition-link" href="/staff/staff.html">
+          <a class="animsition-link" href="<?php echo esc_url( home_url('/staff')); ?>">
             <span class="c-txt-md">View More</span>
           </a>
         </div>
@@ -505,7 +505,7 @@
         </h2>
         <div class="p-special__wrapper appear right">
           <div class="p-special__img left item">
-            <img class="parallax-rt" src="/images/home/cut_2.jpg" alt="">
+            <img class="parallax-rt" src="<?php echo get_template_directory_uri(); ?>/images/home/cut_2.jpg" alt="">
           </div>
           <div class="p-special__txt">
             <h3>
@@ -515,7 +515,7 @@
             </h3>
           </div>
           <div class="p-special__img right item">
-            <img class="parallax-lt" src="/images/home/treatment.jpg" alt="">
+            <img class="parallax-lt" src="<?php echo get_template_directory_uri(); ?>/images/home/treatment.jpg" alt="">
           </div>
         </div>
         <div class="cover-bg clip-js-bg skew2"></div>
@@ -533,7 +533,7 @@
         </h2>
         <div class="p-info-wrap">
           <div class="p-info__img">
-            <img src="/images/home/store__2@pc.jpg" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/home/store__2@pc.jpg" alt="">
           </div>
           <div class="p-info__wrapper appear up">
             <ul class="p-info__list item">
@@ -579,7 +579,7 @@
         <div class="p-recruit__wrap appear up">
           <p class="c-txt-xs item">RivRoundではスタッフを募集しております。<br>詳しくは下記リンクよりご確認下さい。</p>
           <div class="view-more clip-js left">
-            <a class="animsition-link" href="/recruit/recruit.html">
+            <a class="animsition-link" href="<?php echo esc_url( home_url('/recruit')); ?>">
               <span class="c-txt-md">View More</span>
             </a>
           </div>
@@ -595,27 +595,19 @@
         </h2>
         <div class="p-news__wrapper appear up">
           <ul class="p-news__list item">
-            <li class="p-news__item">
-              <a class="p-news__link animsition-link" href="/news/news-single.html">
-                <span class="p-news__date">2021/05/25</span>
-                <p class="p-news__title">営業時間短縮営業について</p>
-              </a>
-            </li>
-            <li class="p-news__item">
-              <a class="p-news__link animsition-link" href="/news/news-single.html">
-                <span class="p-news__date">2021/05/25</span>
-                <p class="p-news__title">新型コロナウィルス感染拡大について</p>
-              </a>
-            </li>
-            <li class="p-news__item">
-              <a class="p-news__link animsition-link" href="/news/news-single.html">
-                <span class="p-news__date">2021/05/25</span>
-                <p class="p-news__title">ホームページリニューアル致しました</p>
-              </a>
-            </li>
+            <?php query_posts('posts_per_page=3'); ?>
+            <?php if (have_posts()) : while(have_posts()) : the_post();?>
+              <li class="p-news__item">
+                <a class="p-news__link animsition-link" href="<?php the_permalink(); ?>">
+                  <span class="p-news__date"><?php echo get_the_date(); ?></span>
+                  <p class="p-news__title"><?php the_title(); ?></p>
+                </a>
+              </li>
+            <?php endwhile; ?>
+            <?php endif; ?>
           </ul>
           <div class="view-more">
-            <a class="view-more__link animsition-link" href="/news/news.html">
+            <a class="view-more__link animsition-link" href="<?php echo esc_url( home_url('/news')); ?>">
               <span class="c-txt-md">NEWS LIST</span></a>
           </div>
         </div>
@@ -626,14 +618,14 @@
       <div class="c-container">
         <div class="p-footer__sns">
           <div class="sns-insta">
-            <a class="sns-link" href="https://www.instagram.com/"><i></i></a>
+            <a class="sns-link" href="https://www.instagram.com/" target="_blank"><i></i></a>
           </div>
           <div class="sns-fb">
-            <a class="sns-link" href="https://www.facebook.com/"><i></i></a>
+            <a class="sns-link" href="https://www.facebook.com/" target="_blank"><i></i></a>
           </div>
         </div>
         <div class="c-logo">
-          <img src="/images/common/riv_logo.png" alt="">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/common/riv_logo.png" alt="">
         </div>
         <div class="copyright">
           &copy; RivRound.inc
@@ -645,16 +637,16 @@
       <nav class="mobile-menu__nav">
         <ul class="mobile-menu__list">
           <li class="mobile-menu__item">
-            <a class="animsition-link" href="/">TOP</a>
+            <a class="animsition-link" href="<?php echo esc_url( home_url('/')); ?>">TOP</a>
           </li>
           <li class="mobile-menu__item">
-            <a class="animsition-link" href="/staff/staff.html">STAFF</a>
+            <a class="animsition-link" href="<?php echo esc_url( home_url('/staff')); ?>">STAFF</a>
           </li>
           <li class="mobile-menu__item">
-            <a class="animsition-link" href="/recruit/recruit.html">RECRUIT</a>
+            <a class="animsition-link" href="<?php echo esc_url( home_url('/recruit')); ?>">RECRUIT</a>
           </li>
           <li class="mobile-menu__item">
-            <a class="animsition-link" href="/news/news.html">NEWS</a>
+            <a class="animsition-link" href="<?php echo esc_url( home_url('/news')); ?>">NEWS</a>
           </li>
         </ul>
         <div class="reserve-btn-wrap">
@@ -676,20 +668,7 @@
     <!-- /.mobile-menu -->
   </div>
   <!-- .superwrapper -->
-  <script src="/scripts/vendor/pace.js"></script>
-  <script src="/scripts/vendor/swiper.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script src="/scripts/vendor/simpleParallax.min.js"></script>
-  <script src="/scripts/vendor/animsition.min.js"></script>
-  <script src="/scripts/libs/hero-slider.js"></script>
-  <script src="/scripts/libs/text-animation.js"></script>
-  <script src="/scripts/libs/scroll-btn.js"></script>
-  <script src="/scripts/libs/page.js"></script>
-  <script src="/scripts/libs/scroll.js"></script>
-  <script src="/scripts/libs/mobile-menu.js"></script>
-  <script src="/scripts/libs/parallax.js"></script>
-  <script src="/scripts/libs/tab.js"></script>
-  <script src="/scripts/main.js"></script>
+  <?php get_footer(); ?>
 </body>
 
 </html>
