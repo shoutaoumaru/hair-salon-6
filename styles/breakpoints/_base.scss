@@ -834,14 +834,22 @@ a {
     }
   }
 
-  &__img {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
+  //インスタセクション
+  #sb_instagram {
+    .sb_instagram_header {
+      display: none;
+    }
 
-    & a {
-      width: 33%;
-      display: block;
+    #sbi {
+      &_images {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .sbi_item {
+          width: 33% !important;
+        }
+      }
     }
   }
 }

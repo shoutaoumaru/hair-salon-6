@@ -257,10 +257,6 @@
         <div class="c-txt-vertical clip-js bottom">
           <p>STYLE</p>
         </div>
-        <div class="insta-link">
-          <a href="https://www.instagram.com/shouta_oumaru/" class="insta-link-btn" target="_blank">
-            <span>follow us</span></a>
-        </div>
       </div>
     </section>
     <!-- .p-style -->
@@ -570,6 +566,20 @@
       </div>
     </section>
     <!-- /#information -->
+    <section id="instagram" class="p-instagram">
+      <div class="c-container">
+        <h2 class="p-insta__tit clip-js left">
+          <p class="c-txt-lr">Instagram</p>
+          <span class="c-txt-xs">インスタグラム</span>
+        </h2>
+        <?php echo apply_filters('the_content', '[instagram-feed]'); ?>
+        <div class="insta-link">
+          <a href="https://www.instagram.com/shouta_oumaru/" class="insta-link-btn" target="_blank">
+            <span>follow us</span></a>
+        </div>
+      </div>
+    </section>
+    <!-- /#instagram -->
     <section id="recruit" class="p-recruit">
       <div class="c-container">
         <h2 class="p-recruit__tit clip-js left">

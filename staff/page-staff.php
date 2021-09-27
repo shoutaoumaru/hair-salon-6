@@ -64,7 +64,11 @@
         </nav>
         <!-- /.nav-btn -->
       </header>
-    <!-- /.header -->
+      <!-- /.header -->
+      <div class="c-top-view">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/home/cut_1@pc.jpg" alt="">
+      </div>
+    <!-- /.c-top-view -->
       <main class="c-staff">
         <div class="c-container">
           <div class="c-staff-wrapper">

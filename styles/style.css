@@ -890,19 +890,23 @@ a {
   margin-bottom: -20px;
 }
 
-.p-instagram__img {
+.p-instagram #sb_instagram .sb_instagram_header {
+  display: none;
+}
+
+.p-instagram #sb_instagram #sbi_images {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.p-instagram__img a {
-  width: 33%;
-  display: block;
+.p-instagram #sb_instagram #sbi_images .sbi_item {
+  width: 33% !important;
 }
 
 .p-recruit__tit {
@@ -2915,6 +2919,7 @@ Stylesheet: 1200px以上のモニタで適用
     padding: 0 0 10vw 0;
   }
   .p-news {
+    margin-top: 5vw;
     padding: 0 0 6vw 0;
   }
   .p-news__list a {
