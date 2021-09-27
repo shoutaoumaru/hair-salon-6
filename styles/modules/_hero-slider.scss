@@ -1,5 +1,4 @@
 .swiper-container {
-  overflow: visible !important;
   height: 85vh;
 
   @media (max-width: 1200px) {
@@ -104,105 +103,106 @@
       font-size: 40px;
     }
   }
-}
 
-//**********  スクロールダウン  ********
-.scrolldown-wrap {
-  .scrolldown {
-    display: inline-block;
-    position: absolute;
-    right: -30px;
-    bottom: -85px;
-    z-index: 2;
-    padding: 10px 10px 90px;
-    overflow: hidden;
-    color: rgb(41, 41, 41);
-    font-size: 14px;
-    font-family: 'Josefin Sans', sans-serif;
-    line-height: 1;
-    letter-spacing: .2em;
-    text-transform: uppercase;
-    text-decoration: none;
-    writing-mode: vertical-lr;
-
-    &::after {
-      content: '';
+  //**********  スクロールダウン  ********
+  .scrolldown-wrap {
+    .scrolldown {
+      display: inline-block;
       position: absolute;
-      bottom: 0;
-      left: 50%;
-      width: 1px;
-      height: 100px;
-      background: $cBlack;
-    }
+      right: 5px;
+      bottom: 55px;
+      z-index: 2;
+      padding: 10px 10px 90px;
+      overflow: hidden;
+      color: rgb(41, 41, 41);
+      font-size: 14px;
+      font-family: 'Josefin Sans', sans-serif;
+      line-height: 1;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      text-decoration: none;
+      writing-mode: vertical-lr;
+      z-index: 9000;
 
-    &::before {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      width: 1px;
-      height: 80px;
-      background: rgba(141, 141, 141, 0.4);
-    }
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 1px;
+        height: 100px;
+        background: $cBlack;
+      }
 
-    &::after {
-      height: 30px;
-      animation: sdl 2.5s ease infinite;
+      &::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 1px;
+        height: 80px;
+        background: rgba(141, 141, 141, 0.4);
+      }
+
+      &::after {
+        height: 30px;
+        animation: sdl 2.5s ease infinite;
+      }
+
+      @media (min-width:600px) {
+        &::after {
+          height: 40px;
+          animation: sdl-lr 2.5s ease infinite;
+        }
+      }
+
+      @keyframes sdl {
+
+        0% {
+          transform: translateY(-70px);
+        }
+
+        50%,
+        100% {
+          transform: translateY(30px);
+        }
+      }
+
+      @keyframes sdl-lr {
+
+        0% {
+          transform: translateY(-150px);
+        }
+
+        50%,
+        100% {
+          transform: translateY(30px);
+        }
+      }
     }
 
     @media (min-width:600px) {
-      &::after {
-        height: 40px;
-        animation: sdl-lr 2.5s ease infinite;
+      & .scrolldown {
+        height: 300px;
+        right: -55px;
+        bottom: -200px;
+        font-size: 18px;
+
+        &::before {
+          bottom: -10px;
+          height: 200px;
+        }
       }
     }
 
-    @keyframes sdl {
+    @media (min-width:960px) {
+      & .scrolldown {
+        font-size: 1.4rem;
+        right: -55px;
 
-      0% {
-        transform: translateY(-70px);
-      }
-
-      50%,
-      100% {
-        transform: translateY(30px);
-      }
-    }
-
-    @keyframes sdl-lr {
-
-      0% {
-        transform: translateY(-150px);
-      }
-
-      50%,
-      100% {
-        transform: translateY(30px);
-      }
-    }
-  }
-
-  @media (min-width:600px) {
-    & .scrolldown {
-      height: 300px;
-      right: -55px;
-      bottom: -200px;
-      font-size: 18px;
-
-      &::before {
-        bottom: -10px;
-        height: 200px;
-      }
-    }
-  }
-
-  @media (min-width:960px) {
-    & .scrolldown {
-      font-size: 1.4rem;
-      right: -55px;
-
-      &::before {
-        bottom: -30px;
+        &::before {
+          bottom: -30px;
+        }
       }
     }
   }

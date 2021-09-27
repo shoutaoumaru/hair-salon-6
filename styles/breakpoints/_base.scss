@@ -2,6 +2,10 @@
 body {
   font-family: 'Josefin Sans', sans-serif;
   font-family: 'Noto Serif JP', serif;
+
+  &.hidden {
+    overflow: hidden;
+  }
 }
 
 img {
@@ -186,9 +190,9 @@ a {
 }
 
 .insta-link {
-  margin-top: 40px;
-  margin-right: 25px;
+  margin-top: 10px;
   text-align: right;
+  display: inline-block;
 
   & span {
     position: relative;
@@ -204,6 +208,8 @@ a {
       position: absolute;
       top: 0;
       left: 0;
+      bottom: 0;
+      margin: auto;
       height: 20px;
       width: 20px;
       background-image: url(/images/common/icon-insta-gr.png);
@@ -215,21 +221,70 @@ a {
       content: '';
       display: inline-block;
       position: absolute;
-      top: 10px;
+      top: 0;
       right: 0;
-      height: 8px;
-      width: 8px;
+      bottom: 0;
+      margin: auto;
+      height: 10px;
+      width: 10px;
       background-image: url(/images/common/arrow.png);
       background-repeat: no-repeat;
       background-size: contain;
     }
+  }
+
+  @media (min-width:600px) {
+    text-align: center;
+    display: block;
+    margin-top: 40px;
+
+    & span {
+      font-size: 24px;
+      padding-left: 35px;
+      padding-right: 25px;
+
+      &::before {
+        height: 25px;
+        width: 25px;
+      }
+
+      &::after {
+        height: 15px;
+        width: 15px;
+      }
+    }
+  }
+
+  @media (min-width:960px) {
+    & span {
+      font-size: 32px;
+      padding-left: 45px;
+      padding-right: 35px;
+
+      &::before {
+        height: 35px;
+        width: 35px;
+      }
+
+      &::after {
+        height: 25px;
+        width: 25px;
+      }
+    }
+  }
+}
+
+.c-top-view {
+  height: 25vh;
+
+  @media (min-width:600px) {
+    height: 30vh;
   }
 }
 
 //#header
 .header {
   z-index: 2000;
-  height: 70px;
   width: 100%;
 
   & .logo__img {
@@ -348,7 +403,7 @@ a {
 //#top 
 .p-top {
   position: relative;
-  padding: 0 0 40vw 0;
+  padding: 70px 0 40vw 0;
 
   &__txtarea {
     position: absolute;
@@ -383,6 +438,7 @@ a {
 
     & .swiper-slide {
       text-align: center;
+
     }
   }
 
@@ -764,6 +820,32 @@ a {
   }
 }
 
+//#instagram
+.p-instagram {
+  margin-bottom: 50px;
+
+  .p-insta {
+    &__tit {
+      margin-bottom: 40px;
+
+      & p {
+        margin-bottom: -20px;
+      }
+    }
+  }
+
+  &__img {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+    & a {
+      width: 33%;
+      display: block;
+    }
+  }
+}
+
 //.p-recruit 
 .p-recruit {
   &__tit {
@@ -921,13 +1003,12 @@ a {
 
 //* * * * * * * * * staff-page * * * * * * * * * * 
 .c-staff {
-  padding: 5vw 0;
   letter-spacing: 3px;
   line-height: 2;
 
   &__title {
     & span {
-      padding-top: 8vw;
+      padding-top: 5vw;
       text-align: center;
       font-weight: 100;
       font-size: 2rem;
@@ -935,7 +1016,7 @@ a {
     }
 
     & p {
-      margin-top: 10vw;
+      margin-top: 5vw;
       font-size: .7rem;
       line-height: 2;
     }
@@ -947,14 +1028,14 @@ a {
   }
 
   &__list {
-    margin-top: 10vw;
+    margin-top: 5vw;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
 
   &__item {
-    width: 45%;
+    width: 48%;
     margin-bottom: 30px;
   }
 
@@ -971,13 +1052,12 @@ a {
 
 //* * * * * * * * * recruit-page * * * * * * * * * * 
 .c-recruit {
-  padding: 15vw 0;
   letter-spacing: 3px;
   line-height: 2;
 
   &__title {
     & span {
-      padding-top: 8vw;
+      padding-top: 5vw;
       text-align: center;
       font-weight: 100;
       font-size: 1.8rem;
@@ -986,7 +1066,7 @@ a {
     }
 
     & p {
-      margin-top: 10vw;
+      margin-top: 5vw;
       font-size: .7rem;
       line-height: 2;
     }
@@ -1046,12 +1126,12 @@ a {
 
 //* * * * * * news-page * * * * * * * 
 .c-news {
-  padding-top: 20vw;
+  padding-top: 5vw;
   text-transform: uppercase;
 
   &__link {
     display: block;
-    padding: 5vw 0;
+    padding: 3vw 0;
 
     & p {
       margin-top: 2vw;
@@ -1153,12 +1233,12 @@ a {
     font-size: .8rem;
   }
 
-  .c-news__title {
+  &__title {
     text-align: center;
-    margin-bottom: 10vw;
+    margin-bottom: 5vw;
   }
 
-  .c-news__block {
+  &_block {
     padding: 8vw 0;
   }
 }
@@ -1166,15 +1246,11 @@ a {
 //* * * * * * news-single-page * * * * * * * 
 .c-news-sl {
   & .c-container {
-    padding: 0 5vw;
+    padding: 5vw 5vw;
   }
 
   &__date {
     color: $cGray;
-  }
-
-  &__list {
-    padding: 15vw 0 0 0;
   }
 
   &__contents {
