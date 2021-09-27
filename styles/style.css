@@ -80,6 +80,10 @@ body {
   font-family: 'Noto Serif JP', serif;
 }
 
+body.hidden {
+  overflow: hidden;
+}
+
 img {
   width: 100%;
   height: 100%;
@@ -262,9 +266,9 @@ a {
 }
 
 .insta-link {
-  margin-top: 40px;
-  margin-right: 25px;
+  margin-top: 10px;
   text-align: right;
+  display: inline-block;
 }
 
 .insta-link span {
@@ -282,6 +286,8 @@ a {
   position: absolute;
   top: 0;
   left: 0;
+  bottom: 0;
+  margin: auto;
   height: 20px;
   width: 20px;
   background-image: url(../images/common/icon-insta-gr.png);
@@ -293,18 +299,66 @@ a {
   content: '';
   display: inline-block;
   position: absolute;
-  top: 10px;
+  top: 0;
   right: 0;
-  height: 8px;
-  width: 8px;
+  bottom: 0;
+  margin: auto;
+  height: 10px;
+  width: 10px;
   background-image: url(../images/common/arrow.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
 
+@media (min-width: 600px) {
+  .insta-link {
+    text-align: center;
+    display: block;
+    margin-top: 40px;
+  }
+  .insta-link span {
+    font-size: 24px;
+    padding-left: 35px;
+    padding-right: 25px;
+  }
+  .insta-link span::before {
+    height: 25px;
+    width: 25px;
+  }
+  .insta-link span::after {
+    height: 15px;
+    width: 15px;
+  }
+}
+
+@media (min-width: 960px) {
+  .insta-link span {
+    font-size: 32px;
+    padding-left: 45px;
+    padding-right: 35px;
+  }
+  .insta-link span::before {
+    height: 35px;
+    width: 35px;
+  }
+  .insta-link span::after {
+    height: 25px;
+    width: 25px;
+  }
+}
+
+.c-top-view {
+  height: 25vh;
+}
+
+@media (min-width: 600px) {
+  .c-top-view {
+    height: 30vh;
+  }
+}
+
 .header {
   z-index: 2000;
-  height: 70px;
   width: 100%;
 }
 
@@ -402,7 +456,7 @@ a {
 
 .p-top {
   position: relative;
-  padding: 0 0 40vw 0;
+  padding: 70px 0 40vw 0;
 }
 
 .p-top__txtarea {
@@ -824,6 +878,33 @@ a {
   background-size: contain;
 }
 
+.p-instagram {
+  margin-bottom: 50px;
+}
+
+.p-instagram .p-insta__tit {
+  margin-bottom: 40px;
+}
+
+.p-instagram .p-insta__tit p {
+  margin-bottom: -20px;
+}
+
+.p-instagram__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.p-instagram__img a {
+  width: 33%;
+  display: block;
+}
+
 .p-recruit__tit {
   margin-bottom: 20px;
 }
@@ -986,13 +1067,12 @@ a {
 }
 
 .c-staff {
-  padding: 5vw 0;
   letter-spacing: 3px;
   line-height: 2;
 }
 
 .c-staff__title span {
-  padding-top: 8vw;
+  padding-top: 5vw;
   text-align: center;
   font-weight: 100;
   font-size: 2rem;
@@ -1000,7 +1080,7 @@ a {
 }
 
 .c-staff__title p {
-  margin-top: 10vw;
+  margin-top: 5vw;
   font-size: .7rem;
   line-height: 2;
 }
@@ -1010,7 +1090,7 @@ a {
 }
 
 .c-staff__list {
-  margin-top: 10vw;
+  margin-top: 5vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1022,7 +1102,7 @@ a {
 }
 
 .c-staff__item {
-  width: 45%;
+  width: 48%;
   margin-bottom: 30px;
 }
 
@@ -1037,13 +1117,12 @@ a {
 }
 
 .c-recruit {
-  padding: 15vw 0;
   letter-spacing: 3px;
   line-height: 2;
 }
 
 .c-recruit__title span {
-  padding-top: 8vw;
+  padding-top: 5vw;
   text-align: center;
   font-weight: 100;
   font-size: 1.8rem;
@@ -1052,7 +1131,7 @@ a {
 }
 
 .c-recruit__title p {
-  margin-top: 10vw;
+  margin-top: 5vw;
   font-size: .7rem;
   line-height: 2;
 }
@@ -1113,13 +1192,13 @@ a {
 }
 
 .c-news {
-  padding-top: 20vw;
+  padding-top: 5vw;
   text-transform: uppercase;
 }
 
 .c-news__link {
   display: block;
-  padding: 5vw 0;
+  padding: 3vw 0;
 }
 
 .c-news__link p {
@@ -1226,25 +1305,21 @@ a {
   font-size: .8rem;
 }
 
-.c-news .c-news__title {
+.c-news__title {
   text-align: center;
-  margin-bottom: 10vw;
+  margin-bottom: 5vw;
 }
 
-.c-news .c-news__block {
+.c-news_block {
   padding: 8vw 0;
 }
 
 .c-news-sl .c-container {
-  padding: 0 5vw;
+  padding: 5vw 5vw;
 }
 
 .c-news-sl__date {
   color: #a0a0a0;
-}
-
-.c-news-sl__list {
-  padding: 15vw 0 0 0;
 }
 
 .c-news-sl__contents {
@@ -1416,7 +1491,6 @@ a {
 }
 
 .swiper-container {
-  overflow: visible !important;
   height: 85vh;
 }
 
@@ -1537,11 +1611,11 @@ a {
   }
 }
 
-.scrolldown-wrap .scrolldown {
+.p-top .scrolldown-wrap .scrolldown {
   display: inline-block;
   position: absolute;
-  right: -30px;
-  bottom: -85px;
+  right: 5px;
+  bottom: 55px;
   z-index: 2;
   padding: 10px 10px 90px;
   overflow: hidden;
@@ -1555,9 +1629,10 @@ a {
   -webkit-writing-mode: vertical-lr;
       -ms-writing-mode: tb-lr;
           writing-mode: vertical-lr;
+  z-index: 9000;
 }
 
-.scrolldown-wrap .scrolldown::after {
+.p-top .scrolldown-wrap .scrolldown::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -1567,7 +1642,7 @@ a {
   background: #161616;
 }
 
-.scrolldown-wrap .scrolldown::before {
+.p-top .scrolldown-wrap .scrolldown::before {
   content: '';
   position: absolute;
   bottom: 0;
@@ -1577,14 +1652,14 @@ a {
   background: rgba(141, 141, 141, 0.4);
 }
 
-.scrolldown-wrap .scrolldown::after {
+.p-top .scrolldown-wrap .scrolldown::after {
   height: 30px;
   -webkit-animation: sdl 2.5s ease infinite;
           animation: sdl 2.5s ease infinite;
 }
 
 @media (min-width: 600px) {
-  .scrolldown-wrap .scrolldown::after {
+  .p-top .scrolldown-wrap .scrolldown::after {
     height: 40px;
     -webkit-animation: sdl-lr 2.5s ease infinite;
             animation: sdl-lr 2.5s ease infinite;
@@ -1640,24 +1715,24 @@ a {
 }
 
 @media (min-width: 600px) {
-  .scrolldown-wrap .scrolldown {
+  .p-top .scrolldown-wrap .scrolldown {
     height: 300px;
     right: -55px;
     bottom: -200px;
     font-size: 18px;
   }
-  .scrolldown-wrap .scrolldown::before {
+  .p-top .scrolldown-wrap .scrolldown::before {
     bottom: -10px;
     height: 200px;
   }
 }
 
 @media (min-width: 960px) {
-  .scrolldown-wrap .scrolldown {
+  .p-top .scrolldown-wrap .scrolldown {
     font-size: 1.4rem;
     right: -55px;
   }
-  .scrolldown-wrap .scrolldown::before {
+  .p-top .scrolldown-wrap .scrolldown::before {
     bottom: -30px;
   }
 }
@@ -2204,26 +2279,6 @@ Stylesheet: 600px以上のモニタで適用
   .view-more__link {
     font-size: 1.5rem;
   }
-  .insta-link {
-    margin-top: 40px;
-    margin-right: 75px;
-  }
-  .insta-link span {
-    padding-left: 35px;
-    padding-right: 20px;
-    font-size: 24px;
-  }
-  .insta-link span::before {
-    top: 5px;
-    left: 0;
-    height: 24px;
-    width: 24px;
-  }
-  .insta-link span::after {
-    top: 15px;
-    height: 12px;
-    width: 12px;
-  }
   .header .sp-navbtn {
     display: none;
   }
@@ -2508,26 +2563,6 @@ Stylesheet: 960px以上のモニタで適用
   .c-txt-xs {
     font-size: 1.2rem;
   }
-  .insta-link {
-    margin-top: 40px;
-    margin-right: 75px;
-  }
-  .insta-link span {
-    padding-left: 40px;
-    padding-right: 25px;
-    font-size: 28px;
-  }
-  .insta-link span::before {
-    top: 8px;
-    left: 0;
-    height: 26px;
-    width: 26px;
-  }
-  .insta-link span::after {
-    top: 17px;
-    height: 14px;
-    width: 14px;
-  }
   .header {
     text-transform: uppercase;
   }
@@ -2742,7 +2777,7 @@ Stylesheet: 960px以上のモニタで適用
     right: 10px;
   }
   .c-recruit {
-    padding: 15vw 0 10vw 0;
+    padding: 2vw 0 5vw 0;
   }
   .c-recruit__title p {
     margin-top: 5vw;
@@ -2757,9 +2792,6 @@ Stylesheet: 960px以上のモニタで適用
   .c-recruit__btn {
     display: none;
   }
-  .c-news {
-    padding-top: 20vw;
-  }
   .c-news__list a {
     padding: 3vw 0 5vw 3vw;
   }
@@ -2769,9 +2801,6 @@ Stylesheet: 960px以上のモニタで適用
   .c-news__date {
     font-size: 1.6rem;
   }
-  .c-news-sl {
-    margin-top: 10vw;
-  }
   .c-news-sl .c-container {
     padding: 0 12vw;
   }
@@ -2780,9 +2809,6 @@ Stylesheet: 960px以上のモニタで適用
   }
   .c-news-sl__date {
     font-size: 1.6rem;
-  }
-  .c-news-sl__list {
-    padding-top: 6vw;
   }
   .c-news-sl__contents {
     padding: 8vw 0;
@@ -2806,27 +2832,6 @@ Stylesheet: 1200px以上のモニタで適用
   }
   .c-container {
     padding: 0 10vw;
-  }
-  .insta-link {
-    margin-top: -53px;
-    margin-left: 140px;
-    text-align: left;
-  }
-  .insta-link span {
-    padding-left: 42px;
-    padding-right: 24px;
-    font-size: 30px;
-  }
-  .insta-link span::before {
-    top: 12px;
-    left: 0;
-    height: 26px;
-    width: 26px;
-  }
-  .insta-link span::after {
-    top: 20px;
-    height: 14px;
-    width: 14px;
   }
   .p-top {
     padding: 0 0 10vw 0;

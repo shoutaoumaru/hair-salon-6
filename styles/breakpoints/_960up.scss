@@ -23,30 +23,6 @@ Stylesheet: 960px以上のモニタで適用
   font-size: 1.2rem;
 }
 
-.insta-link {
-  margin-top: 40px;
-  margin-right: 75px;
-
-  & span {
-    padding-left: 40px;
-    padding-right: 25px;
-    font-size: 28px;
-
-    &::before {
-      top: 8px;
-      left: 0;
-      height: 26px;
-      width: 26px;
-    }
-
-    &::after {
-      top: 17px;
-      height: 14px;
-      width: 14px;
-    }
-  }
-}
-
 //#header
 .header {
   text-transform: uppercase;
@@ -338,7 +314,7 @@ Stylesheet: 960px以上のモニタで適用
 
 //* * * * * * recruite-page * * * * * * *
 .c-recruit {
-  padding: 15vw 0 10vw 0;
+  padding: 2vw 0 5vw 0;
 
   &__title {
     & p {
@@ -362,7 +338,6 @@ Stylesheet: 960px以上のモニタで適用
 
 //* * * * * * news-page * * * * * *
 .c-news {
-  padding-top: 20vw;
 
   &__list {
     & a {
@@ -381,7 +356,6 @@ Stylesheet: 960px以上のモニタで適用
 
 //* * * * * * news-sl-page * * * * * * *
 .c-news-sl {
-  margin-top: 10vw;
 
   & .c-container {
     padding: 0 12vw;
@@ -397,9 +371,6 @@ Stylesheet: 960px以上のモニタで適用
     font-size: 1.6rem;
   }
 
-  &__list {
-    padding-top: 6vw;
-  }
 
   &__contents {
     padding: 8vw 0;
